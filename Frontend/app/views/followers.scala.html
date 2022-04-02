@@ -1,4 +1,4 @@
-@(authorizeMessage: String)
+@(followers: String)
 <!DOCTYPE html>
 <html>
     <head>
@@ -20,7 +20,7 @@
         <header class="topbar">
             <h1 class="focused" style="font-size: 37px;
                 color: #57a957">
-                <strong>Play Setup Demo</strong>
+                <strong>Followers</strong>
             </h1>
         </header>
 
@@ -28,34 +28,19 @@
         <div class="row">
             <div class="card col s4 offset-s4 ">
                 <div class="card-panel">
-                    <form action="@routes.HomeController.signupHandler()" method="GET">
-
-                        <div class="row">
-                            <div class="input-field col s12">
-
-                                <input id="username" name="username" type="text" class="validate">
-                                <label for="username">Username</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-
-                                <input id="password" name="password" type="password" class="validate">
-                                <label for="password">Password</label>
-                            </div>
-                        </div>
-                        @if(authorizeMessage!= null){
-                            <div class="alert alert-primary" role="alert">
-                            @authorizeMessage
-                            </div>
-                            <br>
-                        }
-
-                        <div class="row">
-                            <button id="api-search-button" class="btn col s4 offset-s4" type="submit">Submit</button>
-                        </div>
-
-                    </form>
+                    <h3 class="focused blue-text text-darken-2">Followers</h3>
+                    <ul class="collection">
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle blue">JD</i>
+                            <span class="title">Jane Doe</span>
+                                <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle blue">JS</i>
+                            <span class="title">John Smith</span>
+                                <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

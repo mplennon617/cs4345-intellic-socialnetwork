@@ -1,17 +1,16 @@
-2022-03-31 20:45:48,840 [INFO] from application in ForkJoinPool-1-worker-9 - Creating Pool for datasource 'default'
-2022-03-31 20:45:48,998 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-9 - Database [default] connected at jdbc:mysql://localhost/ebeantest?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-2022-03-31 20:45:49,310 [ERROR] from play.api.db.evolutions.DefaultEvolutionsApi in ForkJoinPool-1-worker-9 - Table 'user' already exists [ERROR:1050, SQLSTATE:42S01]
-2022-03-31 20:45:49,392 [ERROR] from application in netty-event-loop-3 - 
+2022-04-01 23:30:13,871 [INFO] from application in ForkJoinPool-1-worker-9 - Creating Pool for datasource 'default'
+2022-04-01 23:30:14,004 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-9 - Database [default] connected at jdbc:mysql://localhost/ebeantest?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2022-04-01 23:30:14,214 [WARN] from com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager in ForkJoinPool-1-worker-9 - Bean [models.Follower] has no unique id set
+2022-04-01 23:30:14,829 [INFO] from application in ForkJoinPool-1-worker-9 - Shutting down connection pool.
+2022-04-01 23:30:14,876 [INFO] from application in ForkJoinPool-1-worker-9 - Creating Pool for datasource 'default'
+2022-04-01 23:30:14,882 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-9 - Database [default] connected at jdbc:mysql://localhost/ebeantest?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2022-04-01 23:30:14,897 [WARN] from com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager in ForkJoinPool-1-worker-9 - Bean [models.Follower] has no unique id set
+2022-04-01 23:30:14,918 [ERROR] from application in netty-event-loop-3 - 
 
-! @7n77nl59c - Internal server error, for (GET) [/] ->
+! @7n7g0c825 - Internal server error, for (GET) [/] ->
  
-play.api.db.evolutions.InconsistentDatabase: Database 'default' is in an inconsistent state![An evolution has not been applied properly. Please check the problem and resolve it manually before marking it as resolved.]
-	at play.api.db.evolutions.DatabaseEvolutions.checkEvolutionsState(EvolutionsApi.scala:276)
-	at play.api.db.evolutions.DatabaseEvolutions.databaseEvolutions(EvolutionsApi.scala:127)
-	at play.api.db.evolutions.DatabaseEvolutions.scripts(EvolutionsApi.scala:102)
-	at play.api.db.evolutions.DatabaseEvolutions.scripts(EvolutionsApi.scala:117)
-	at play.api.db.evolutions.DefaultEvolutionsApi.scripts(EvolutionsApi.scala:82)
-	at play.api.db.evolutions.ApplicationEvolutions$$anonfun$play$api$db$evolutions$ApplicationEvolutions$$runEvolutions$1.apply$mcV$sp(ApplicationEvolutions.scala:53)
+play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
+	at play.api.db.evolutions.ApplicationEvolutions$$anonfun$play$api$db$evolutions$ApplicationEvolutions$$runEvolutions$1.apply$mcV$sp(ApplicationEvolutions.scala:77)
 	at play.api.db.evolutions.ApplicationEvolutions.withLock(ApplicationEvolutions.scala:99)
 	at play.api.db.evolutions.ApplicationEvolutions.play$api$db$evolutions$ApplicationEvolutions$$runEvolutions(ApplicationEvolutions.scala:49)
 	at play.api.db.evolutions.ApplicationEvolutions$$anonfun$start$1.apply(ApplicationEvolutions.scala:42)
@@ -60,7 +59,8 @@ play.api.db.evolutions.InconsistentDatabase: Database 'default' is in an inconsi
 	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1067)
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1703)
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:172)
-2022-03-31 20:46:13,855 [INFO] from application in ForkJoinPool-1-worker-9 - Shutting down connection pool.
-2022-03-31 20:46:13,906 [INFO] from application in ForkJoinPool-1-worker-9 - Creating Pool for datasource 'default'
-2022-03-31 20:46:13,915 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-9 - Database [default] connected at jdbc:mysql://localhost/ebeantest?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-2022-03-31 20:46:13,995 [INFO] from play.api.Play in ForkJoinPool-1-worker-9 - Application started (Dev)
+2022-04-01 23:30:20,506 [INFO] from application in ForkJoinPool-1-worker-9 - Shutting down connection pool.
+2022-04-01 23:30:20,552 [INFO] from application in ForkJoinPool-1-worker-9 - Creating Pool for datasource 'default'
+2022-04-01 23:30:20,557 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-9 - Database [default] connected at jdbc:mysql://localhost/ebeantest?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2022-04-01 23:30:20,572 [WARN] from com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager in ForkJoinPool-1-worker-9 - Bean [models.Follower] has no unique id set
+2022-04-01 23:30:20,624 [INFO] from play.api.Play in ForkJoinPool-1-worker-9 - Application started (Dev)

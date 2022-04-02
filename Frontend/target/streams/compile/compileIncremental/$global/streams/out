@@ -1,3 +1,4 @@
+[debug] [naha] Invalidating C:\Users\Michael\code\classes\CS4345-SWEPrinciples\Lab-2-Ebean\Frontend\target\scala-2.12\classes\utils\HttpResponse.class: stamp changed from lastModified(1648861109565) to lastModified(1648874453553)
 [debug] [naha] 
 [debug] [naha] Initial source changes: 
 [debug] [naha] 	removed:Set()
@@ -5,11 +6,23 @@
 [debug] [naha] 	modified: Set()
 [debug] [naha] Invalidated products: Set()
 [debug] [naha] External API changes: API Changes: Set()
-[debug] [naha] Modified binary dependencies: Set()
+[debug] [naha] Modified binary dependencies: Set(C:\Users\Michael\code\classes\CS4345-SWEPrinciples\Lab-2-Ebean\Frontend\target\scala-2.12\classes\utils\HttpResponse.class)
 [debug] [naha] Initial directly invalidated sources: Set()
 [debug] [naha] 
 [debug] [naha] Sources indirectly invalidated by:
 [debug] [naha] 	product: Set()
-[debug] [naha] 	binary dep: Set()
+[debug] [naha] 	binary dep: Set(C:\Users\Michael\code\classes\CS4345-SWEPrinciples\Lab-2-Ebean\Frontend\app\utils\HttpUtil.java)
 [debug] [naha] 	external source: Set()
-[debug] All initially invalidated sources: Set()
+[debug] All initially invalidated sources: Set(C:\Users\Michael\code\classes\CS4345-SWEPrinciples\Lab-2-Ebean\Frontend\app\utils\HttpUtil.java)
+[debug] [naha] Initial set of included nodes: Set(C:\Users\Michael\code\classes\CS4345-SWEPrinciples\Lab-2-Ebean\Frontend\app\utils\HttpUtil.java)
+[info] Compiling 1 Java source to C:\Users\Michael\code\classes\CS4345-SWEPrinciples\Lab-2-Ebean\Frontend\target\scala-2.12\classes...
+[debug] Attempting to call com.sun.tools.javac.api.JavacTool@2c159bfa directly...
+[debug] Java compilation took 0.0930513 s
+[debug] Java analysis took 0.0120501 s
+[debug] Java compile + analysis took 0.1120722 s
+[debug] [naha] New invalidations:
+[debug] [naha] 	Set()
+[debug] [naha] Initial set of included nodes: Set()
+[debug] [naha] Previously invalidated, but (transitively) depend on new invalidations:
+[debug] [naha] 	Set()
+[debug] [naha] All newly invalidated sources after taking into account (previously) recompiled sources:Set()

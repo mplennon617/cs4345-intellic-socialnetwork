@@ -38,12 +38,19 @@ public class User {
         this.followers = followers;
     }
 
-    // Given a UserID, retrieve the user's followers from the database.
 //    public CompletionStage<WSResponse> getFollowers() {
 //
 //        WSClient ws = play.test.WSTestClient.newClient(9005);
 //        //get followers data
 //        WSRequest request = ws.url("http://localhost:9005/followers");
+//        ObjectNode res = Json.newObject();
+//
+//        int i = 1;
+//        for (Long currId : this.followers) {
+//            res.put("follower-"+i, currId);
+//            i++;
+//        }
+//
 //        return request.addHeader("Content-Type", "application/json")
 //                .get()
 //                .thenApply((WSResponse r) -> {
@@ -65,7 +72,7 @@ public class User {
         }
 
         return request.addHeader("Content-Type", "application/json")
-                .post(res)
+                .get()
                 .thenApply((WSResponse r) -> {
                     return r;
                 });

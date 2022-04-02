@@ -15,7 +15,7 @@ VALUES
 (8,'jia','jia'),
 (9,'zhang','zhang');
 
-INSERT INTO follower (`follower_id`, `user_id`)
+INSERT INTO follower (`followerID`, `userID`)
 VALUES
     (2,1),
     (3,1),

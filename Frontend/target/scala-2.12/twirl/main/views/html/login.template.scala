@@ -30,7 +30,8 @@ object login extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Html
       {
 
 
-Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
+Seq[Any](format.raw/*1.28*/("""
+"""),format.raw/*2.1*/("""<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -107,11 +108,11 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2022-03-29T22:34:19.295
-                  SOURCE: C:/Users/Michael/Downloads/Lab-2-Ebean/Lab-2-Ebean/Frontend/app/views/login.scala.html
-                  HASH: 35dca9e6949486fa9ac000f0cb94ff87b88db485
-                  MATRIX: 948->1|1068->28|2656->1591|2671->1597|2722->1627|3477->2355|3513->2382|3552->2383|3609->2412|3712->2488|3749->2504|3806->2533|3902->2598|3955->2623|4183->2824|4198->2830|4243->2854
-                  LINES: 28->1|33->2|62->31|62->31|62->31|78->47|78->47|78->47|79->48|80->49|80->49|81->50|83->52|84->53|87->56|87->56|87->56
+                  DATE: 2022-04-01T18:45:42.031
+                  SOURCE: C:/Users/sinha/Documents/Spring2022/CS4345/cs4345-intellic-socialnetwork/Frontend/app/views/login.scala.html
+                  HASH: 1ba9c12fdc3d6fe13f2a6a403ab12508e7c92e81
+                  MATRIX: 948->1|1069->27|1097->29|2714->1621|2729->1627|2780->1657|3551->2401|3587->2428|3626->2429|3684->2459|3788->2536|3825->2552|3883->2582|3981->2649|4035->2675|4266->2879|4281->2885|4326->2909
+                  LINES: 28->1|33->1|34->2|63->31|63->31|63->31|79->47|79->47|79->47|80->48|81->49|81->49|82->50|84->52|85->53|88->56|88->56|88->56
                   -- GENERATED --
               */
           

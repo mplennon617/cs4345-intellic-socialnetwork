@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/Michael/Downloads/Lab-2-Ebean/Lab-2-Ebean/Frontend/conf/routes
-// @DATE:Tue Mar 29 22:34:19 CDT 2022
+// @SOURCE:C:/Users/sinha/Documents/Spring2022/CS4345/cs4345-intellic-socialnetwork/Frontend/conf/routes
+// @DATE:Fri Apr 01 18:45:41 CDT 2022
 
 import play.api.mvc.Call
 

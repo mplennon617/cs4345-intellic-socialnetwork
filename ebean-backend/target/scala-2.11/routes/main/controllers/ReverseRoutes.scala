@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/Michael/Downloads/Lab-2-Ebean/Lab-2-Ebean/ebean-backend/conf/routes
-// @DATE:Tue Mar 29 22:44:36 CDT 2022
+// @SOURCE:C:/Users/sinha/Documents/Spring2022/CS4345/cs4345-intellic-socialnetwork/ebean-backend/conf/routes
+// @DATE:Fri Apr 01 23:26:22 CDT 2022
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -35,16 +35,22 @@ package controllers {
     }
 
   
-    // @LINE:9
+    // @LINE:12
     def authenticate(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "login")
     }
   
-    // @LINE:13
+    // @LINE:16
     def registerNew(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "signup")
+    }
+  
+    // @LINE:9
+    def getFollowers(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "followers")
     }
   
   }

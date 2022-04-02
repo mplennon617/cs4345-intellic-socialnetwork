@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/Michael/Downloads/Lab-2-Ebean/Lab-2-Ebean/ebean-backend/conf/routes
-// @DATE:Tue Mar 29 22:44:36 CDT 2022
+// @SOURCE:C:/Users/sinha/Documents/Spring2022/CS4345/cs4345-intellic-socialnetwork/ebean-backend/conf/routes
+// @DATE:Fri Apr 01 23:26:22 CDT 2022
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -43,7 +43,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:9
+    // @LINE:12
     def authenticate: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.UserController.authenticate",
       """
@@ -53,12 +53,22 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:13
+    // @LINE:16
     def registerNew: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.UserController.registerNew",
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "signup"})
+        }
+      """
+    )
+  
+    // @LINE:9
+    def getFollowers: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserController.getFollowers",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "followers"})
         }
       """
     )

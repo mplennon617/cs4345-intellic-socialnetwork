@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/Michael/Downloads/Lab-2-Ebean/Lab-2-Ebean/ebean-backend/conf/routes
-// @DATE:Tue Mar 29 22:44:36 CDT 2022
+// @SOURCE:C:/Users/sinha/Documents/Spring2022/CS4345/cs4345-intellic-socialnetwork/ebean-backend/conf/routes
+// @DATE:Fri Apr 01 23:26:22 CDT 2022
 
 package router
 
@@ -44,6 +44,7 @@ class Routes(
 
   def documentation = List(
     ("""GET""", this.prefix, """controllers.HomeController.index"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """followers""", """controllers.UserController.getFollowers()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.UserController.authenticate()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signup""", """controllers.UserController.registerNew()"""),
     Nil
@@ -71,10 +72,27 @@ class Routes(
   )
 
   // @LINE:9
-  private[this] lazy val controllers_UserController_authenticate1_route = Route("POST",
+  private[this] lazy val controllers_UserController_getFollowers1_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("followers")))
+  )
+  private[this] lazy val controllers_UserController_getFollowers1_invoker = createInvoker(
+    UserController_1.getFollowers(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.UserController",
+      "getFollowers",
+      Nil,
+      "GET",
+      """ View Followers {"id":id }""",
+      this.prefix + """followers"""
+    )
+  )
+
+  // @LINE:12
+  private[this] lazy val controllers_UserController_authenticate2_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("login")))
   )
-  private[this] lazy val controllers_UserController_authenticate1_invoker = createInvoker(
+  private[this] lazy val controllers_UserController_authenticate2_invoker = createInvoker(
     UserController_1.authenticate(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -87,11 +105,11 @@ class Routes(
     )
   )
 
-  // @LINE:13
-  private[this] lazy val controllers_UserController_registerNew2_route = Route("POST",
+  // @LINE:16
+  private[this] lazy val controllers_UserController_registerNew3_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("signup")))
   )
-  private[this] lazy val controllers_UserController_registerNew2_invoker = createInvoker(
+  private[this] lazy val controllers_UserController_registerNew3_invoker = createInvoker(
     UserController_1.registerNew(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -99,7 +117,7 @@ class Routes(
       "registerNew",
       Nil,
       "POST",
-      """ Add User  {"name":name, "password":password}""",
+      """ Add User  {"username":name, "password":password}""",
       this.prefix + """signup"""
     )
   )
@@ -114,15 +132,21 @@ class Routes(
       }
   
     // @LINE:9
-    case controllers_UserController_authenticate1_route(params) =>
+    case controllers_UserController_getFollowers1_route(params) =>
       call { 
-        controllers_UserController_authenticate1_invoker.call(UserController_1.authenticate())
+        controllers_UserController_getFollowers1_invoker.call(UserController_1.getFollowers())
       }
   
-    // @LINE:13
-    case controllers_UserController_registerNew2_route(params) =>
+    // @LINE:12
+    case controllers_UserController_authenticate2_route(params) =>
       call { 
-        controllers_UserController_registerNew2_invoker.call(UserController_1.registerNew())
+        controllers_UserController_authenticate2_invoker.call(UserController_1.authenticate())
+      }
+  
+    // @LINE:16
+    case controllers_UserController_registerNew3_route(params) =>
+      call { 
+        controllers_UserController_registerNew3_invoker.call(UserController_1.registerNew())
       }
   }
 }

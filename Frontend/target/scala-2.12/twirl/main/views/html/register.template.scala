@@ -30,7 +30,8 @@ object register extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.H
       {
 
 
-Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
+Seq[Any](format.raw/*1.28*/("""
+"""),format.raw/*2.1*/("""<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -108,11 +109,11 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2022-03-29T22:34:19.301
-                  SOURCE: C:/Users/Michael/Downloads/Lab-2-Ebean/Lab-2-Ebean/Frontend/app/views/register.scala.html
-                  HASH: 21084405952337d1dab47a06d6b9e9c7674f3466
-                  MATRIX: 951->1|1071->28|2659->1591|2674->1597|2726->1628|3481->2356|3517->2383|3556->2384|3613->2413|3716->2489|3753->2505|3810->2534|3906->2599|3960->2625
-                  LINES: 28->1|33->2|62->31|62->31|62->31|78->47|78->47|78->47|79->48|80->49|80->49|81->50|83->52|85->54
+                  DATE: 2022-04-01T18:45:42.053
+                  SOURCE: C:/Users/sinha/Documents/Spring2022/CS4345/cs4345-intellic-socialnetwork/Frontend/app/views/register.scala.html
+                  HASH: 2ac51c39a32aed6b10c38e886df6b809bddb673a
+                  MATRIX: 951->1|1072->27|1100->29|2717->1621|2732->1627|2784->1658|3555->2402|3591->2429|3630->2430|3688->2460|3792->2537|3829->2553|3887->2583|3985->2650|4041->2678
+                  LINES: 28->1|33->1|34->2|63->31|63->31|63->31|79->47|79->47|79->47|80->48|81->49|81->49|82->50|84->52|86->54
                   -- GENERATED --
               */
           

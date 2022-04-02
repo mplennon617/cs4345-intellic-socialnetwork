@@ -3,9 +3,12 @@ package controllers;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import models.User;
+import models.Follower;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
+
+import java.util.List;
 
 
 /**
@@ -60,6 +63,31 @@ public class UserController extends Controller {
             user.password=password;
             user.save();
             result.put("body", username);
+        }
+        return ok(result);
+    }
+
+    /**
+     * Return list of Followers give user ID
+     * GET
+     * @return success if valid, fail if already taken
+     */
+    public Result getFollowers() {
+        System.out.println("Follower List");
+        JsonNode req = request().body().asJson();
+        Long id = req.get("id").asLong();
+
+        ObjectNode result = null;
+
+        List<Follower> list = Follower.getFollowers(id);
+        if (list != null) {
+            result = Json.newObject();
+            int i = 1;
+            for (Follower l : list){
+
+                result.put(("ID"+i), l.followerID);
+                i++;
+            }
         }
         return ok(result);
     }

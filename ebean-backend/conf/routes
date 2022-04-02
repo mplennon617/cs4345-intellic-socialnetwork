@@ -5,10 +5,15 @@
 # An example controller showing a sample home page
 GET     /                           controllers.HomeController.index
 
+# View Followers {"id":id }
+GET     /followers                  controllers.UserController.getFollowers()
+
 #Login
-POST     /login                      controllers.UserController.authenticate()
+POST    /login                      controllers.UserController.authenticate()
 
 
-# Add User  {"name":name, "password":password}
+# Add User  {"username":name, "password":password}
 POST    /signup                      controllers.UserController.registerNew()
+
+
 

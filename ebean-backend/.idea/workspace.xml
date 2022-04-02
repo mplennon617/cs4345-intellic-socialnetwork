@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffa6d230-5926-407e-983e-789957ec3281" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Frontend/app/views/followers.scala.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Frontend/public/javascripts/materialize.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Frontend/public/stylesheets/materialize.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/Follower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/.idea/modules/client-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.idea/modules/client-build.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/.idea/modules/client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.idea/modules/client.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/.idea/play2_project_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.idea/play2_project_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/app/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/app/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/app/controllers/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/app/controllers/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/app/views/followers.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/app/views/followers.scala.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/app/views/index.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/app/views/index.scala.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/conf/routes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/logs/application.log" afterDir="false" />
@@ -110,6 +110,7 @@
       <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/HomeController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/ReverseAssets.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/ReverseAssets.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/ReverseHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/ReverseHomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/javascript/ReverseAssets.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/javascript/ReverseAssets.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/javascript/ReverseHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/javascript/ReverseHomeController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/router/Routes$$anonfun$routes$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/router/Routes$$anonfun$routes$1.class" afterDir="false" />
@@ -202,11 +203,6 @@
       <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/runtime/internalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/web-assets/assets/$global/streams/sync-assets-web-assets" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/web-assets/assets/$global/streams/sync-assets-web-assets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.11" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.11" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.11" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.11" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,6 +252,13 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -336,7 +339,7 @@
       </option>
       <option name="play2NeedOpenInBrowser" value="true" />
       <option name="play2NonDefaultInstallDir" value="" />
-      <option name="play2OpenUrl" value="http://localhost:9000" />
+      <option name="play2OpenUrl" value="http://localhost:9005" />
       <option name="play2isAutoReloadEnabled" value="false" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
@@ -382,7 +385,7 @@
       <workItem from="1648763448613" duration="1202000" />
       <workItem from="1648772222386" duration="401000" />
       <workItem from="1648773274724" duration="4471000" />
-      <workItem from="1648856337578" duration="4879000" />
+      <workItem from="1648856337578" duration="9365000" />
     </task>
     <servers />
   </component>

@@ -8,12 +8,15 @@ import play.libs.ws.WSResponse;
 
 import java.util.concurrent.CompletionStage;
 
+import java.util.List;
 
 public class User {
 
     private String username;
 
     private String password;
+
+    private List<Long> followers;
 
     public String getUsername() {
         return username;
@@ -27,10 +30,46 @@ public class User {
         return password;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPassword(String password) { this.password = password; }
+
+    public List<Long> getFollowers() { return followers; }
+
+    public void setFollowers(List<Long> password) {
+        this.followers = followers;
     }
 
+    // Given a UserID, retrieve the user's followers from the database.
+//    public CompletionStage<WSResponse> getFollowers() {
+//
+//        WSClient ws = play.test.WSTestClient.newClient(9005);
+//        //get followers data
+//        WSRequest request = ws.url("http://localhost:9005/followers");
+//        return request.addHeader("Content-Type", "application/json")
+//                .get()
+//                .thenApply((WSResponse r) -> {
+//                    return r;
+//                });
+//    }
+
+    public CompletionStage<WSResponse> gatherFollowers() {
+
+        WSClient ws = play.test.WSTestClient.newClient(9005);
+        //get followers data
+        WSRequest request = ws.url("http://localhost:9005/followers");
+        ObjectNode res = Json.newObject();
+
+        int i = 1;
+        for (Long currId : this.followers) {
+            res.put("follower-"+i, currId);
+            i++;
+        }
+
+        return request.addHeader("Content-Type", "application/json")
+                .post(res)
+                .thenApply((WSResponse r) -> {
+                    return r;
+                });
+    }
 
     public CompletionStage<WSResponse> checkAuthorized() {
 

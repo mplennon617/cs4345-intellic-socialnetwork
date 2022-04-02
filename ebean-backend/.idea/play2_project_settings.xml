@@ -13,8 +13,8 @@
         <entry key="root">
           <value>
             <ProjectSettingsEntry>
-              <option name="sourceDir" value="C:\Users\Michael\Downloads\Lab-2-Ebean\Lab-2-Ebean\ebean-backend\app" />
-              <option name="confDir" value="C:\Users\Michael\code\classes\CS4345-SWEPrinciples\Lab-2-Ebean\ebean-backend\app" />
+              <option name="sourceDir" value="C:\Users\Michael\code\classes\CS4345-SWEPrinciples\Lab-2-Ebean\ebean-backend\app" />
+              <option name="confDir" value="C:\Users\Michael\code\classes\CS4345-SWEPrinciples\cs4345-intellic-socialnetwork\ebean-backend\app" />
               <option name="templateImports">
                 <list>
                   <option value="models._" />
@@ -39,7 +39,7 @@
                   <option value="play.libs.F" />
                 </list>
               </option>
-              <option name="uri" value="/C:/Users/Michael/code/classes/CS4345-SWEPrinciples/Lab-2-Ebean/ebean-backend" />
+              <option name="uri" value="/C:/Users/Michael/code/classes/CS4345-SWEPrinciples/cs4345-intellic-socialnetwork/ebean-backend" />
             </ProjectSettingsEntry>
           </value>
         </entry>

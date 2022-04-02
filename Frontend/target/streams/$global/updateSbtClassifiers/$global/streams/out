@@ -1,6 +1,5 @@
 [debug] Other repositories:
 [debug] Default repositories:
-[debug] no default cache defined: set to C:\Users\Michael\.ivy2\cache
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: client#client$sbt_2.10;1.0
 [debug] 	confs: [default]
@@ -25,6 +24,7 @@
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.7 {default=[default(compile)]} => dependency: org.scala-lang#scala-reflect;2.10.7 {default=[default(compile)]}
 [info] Resolving org.scala-lang#scala-library;2.10.7 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.10.7 {compile=[default(compile)]}
+[debug] no default cache defined: set to C:\Users\Michael\.ivy2\cache
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.7
 [debug] 	found org.scala-lang#scala-library;2.10.7 in sbt-chain
 [debug] 	[2.10.7] org.scala-lang#scala-library;2.10.7
@@ -3350,9 +3350,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.17!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar
-[debug] :: resolution report :: resolve 477ms :: artifacts dl 38ms
-[debug] 	report for client#client$sbt_2.10;1.0 default produced in C:\Users\Michael\Downloads\Lab-2-Ebean\Lab-2-Ebean\Frontend\target\scala-2.12\resolution-cache\reports\client-client$sbt_2.10-default.xml
-[debug] 	resolve done (477ms resolve - 38ms download)
+[debug] :: resolution report :: resolve 422ms :: artifacts dl 41ms
+[debug] 	report for client#client$sbt_2.10;1.0 default produced in C:\Users\Michael\code\classes\CS4345-SWEPrinciples\cs4345-intellic-socialnetwork\Frontend\target\scala-2.12\resolution-cache\reports\client-client$sbt_2.10-default.xml
+[debug] 	resolve done (422ms resolve - 41ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: client#client$sources_2.10;1.0
 [debug] 	confs: [default]
@@ -4750,6 +4750,6 @@
 [debug] 	[NOT REQUIRED] io.apigee.trireme#trireme-core;0.9.4!trireme-core.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-exceptions;2.7.3!play-exceptions.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#persist;0.13.17!persist.jar(src)
-[debug] :: resolution report :: resolve 171ms :: artifacts dl 39ms
-[debug] 	report for client#client$sources_2.10;1.0 default produced in C:\Users\Michael\Downloads\Lab-2-Ebean\Lab-2-Ebean\Frontend\target\scala-2.12\resolution-cache\reports\client-client$sources_2.10-default.xml
-[debug] 	resolve done (171ms resolve - 39ms download)
+[debug] :: resolution report :: resolve 165ms :: artifacts dl 32ms
+[debug] 	report for client#client$sources_2.10;1.0 default produced in C:\Users\Michael\code\classes\CS4345-SWEPrinciples\cs4345-intellic-socialnetwork\Frontend\target\scala-2.12\resolution-cache\reports\client-client$sources_2.10-default.xml
+[debug] 	resolve done (165ms resolve - 32ms download)

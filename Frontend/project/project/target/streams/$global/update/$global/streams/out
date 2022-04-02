@@ -1,4 +1,4 @@
-[info] Updating {file:/C:/Users/Michael/Downloads/Lab-2-Ebean/Lab-2-Ebean/Frontend/project/project/}frontend-build-build...
+[info] Updating {file:/C:/Users/Michael/code/classes/CS4345-SWEPrinciples/cs4345-intellic-socialnetwork/Frontend/project/project/}frontend-build-build...
 [debug] :: resolving dependencies :: default#frontend-build-build;0.1-SNAPSHOT
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
@@ -5919,31 +5919,8 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [info] Resolving org.scala-lang#jline;2.10.7 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scala-lang#jline;2.10.7 {optional=[compile(*), master(*)]}
-[info] Resolving org.scala-lang#jline;2.10.7 ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.scala-lang#jline;2.10.7 {optional=[compile(*), master(*)]}
-[debug] 		tried https://repo.typesafe.com/typesafe/ivy-releases/org.scala-lang/jline/2.10.7/ivys/ivy.xml
-[debug] CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.scala-lang/jline/2.10.7/ivys/ivy.xml
-[debug] 	typesafe-ivy-releases: no ivy file found for org.scala-lang#jline;2.10.7
-[debug] 		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-lang/jline/2.10.7/ivys/ivy.xml
-[debug] CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-lang/jline/2.10.7/ivys/ivy.xml
-[debug] 	sbt-plugin-releases: no ivy file found for org.scala-lang#jline;2.10.7
-[debug] 		tried C:\Users\Michael\.ivy2\local\org.scala-lang\jline\2.10.7\ivys\ivy.xml
-[debug] 	local: no ivy file found for org.scala-lang#jline;2.10.7
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/jline/2.10.7/jline-2.10.7.pom
-[debug] 	public: found md file for org.scala-lang#jline;2.10.7
-[debug] 		=> https://repo1.maven.org/maven2/org/scala-lang/jline/2.10.7/jline-2.10.7.pom (2.10.7)
-[debug] downloading https://repo1.maven.org/maven2/org/scala-lang/jline/2.10.7/jline-2.10.7.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/jline/2.10.7/jline-2.10.7.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/jline/2.10.7/jline-2.10.7.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/jline/2.10.7/jline-2.10.7.pom
-[debug] 	[SUCCESSFUL ] org.scala-lang#jline;2.10.7!jline.pom(pom.original) (126ms)
-[debug] 		tried https://repo.typesafe.com/typesafe/ivy-releases/org.scala-lang/jline/2.10.7/jars/jline.jar
-[debug] CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.scala-lang/jline/2.10.7/jars/jline.jar
-[debug] 		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-lang/jline/2.10.7/jars/jline.jar
-[debug] CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-lang/jline/2.10.7/jars/jline.jar
-[debug] 		tried C:\Users\Michael\.ivy2\local\org.scala-lang\jline\2.10.7\jars\jline.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/jline/2.10.7/jline-2.10.7.jar
-[debug] 	found org.scala-lang#jline;2.10.7 in public
+[debug] sbt-chain: module revision found in cache: org.scala-lang#jline;2.10.7
+[debug] 	found org.scala-lang#jline;2.10.7 in sbt-chain
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.7->org.scala-lang#jline;2.10.7 [optional->compile(*)]
 [debug] == resolving dependencies org.scala-lang#jline;2.10.7->org.fusesource.jansi#jansi;1.4 [compile->master(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
@@ -5968,31 +5945,8 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [info] Resolving org.fusesource.jansi#jansi;1.4 ...
 [debug] sbt-chain: Checking cache for: dependency: org.fusesource.jansi#jansi;1.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[info] Resolving org.fusesource.jansi#jansi;1.4 ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: org.fusesource.jansi#jansi;1.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried https://repo.typesafe.com/typesafe/ivy-releases/org.fusesource.jansi/jansi/1.4/ivys/ivy.xml
-[debug] CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.fusesource.jansi/jansi/1.4/ivys/ivy.xml
-[debug] 	typesafe-ivy-releases: no ivy file found for org.fusesource.jansi#jansi;1.4
-[debug] 		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.fusesource.jansi/jansi/1.4/ivys/ivy.xml
-[debug] CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.fusesource.jansi/jansi/1.4/ivys/ivy.xml
-[debug] 	sbt-plugin-releases: no ivy file found for org.fusesource.jansi#jansi;1.4
-[debug] 		tried C:\Users\Michael\.ivy2\local\org.fusesource.jansi\jansi\1.4\ivys\ivy.xml
-[debug] 	local: no ivy file found for org.fusesource.jansi#jansi;1.4
-[debug] 		tried https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.4/jansi-1.4.pom
-[debug] 	public: found md file for org.fusesource.jansi#jansi;1.4
-[debug] 		=> https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.4/jansi-1.4.pom (1.4)
-[debug] downloading https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.4/jansi-1.4.pom ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.4/jansi-1.4.pom
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.4/jansi-1.4.pom.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.4/jansi-1.4.pom
-[debug] 	[SUCCESSFUL ] org.fusesource.jansi#jansi;1.4!jansi.pom(pom.original) (32ms)
-[debug] 		tried https://repo.typesafe.com/typesafe/ivy-releases/org.fusesource.jansi/jansi/1.4/jars/jansi.jar
-[debug] CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.fusesource.jansi/jansi/1.4/jars/jansi.jar
-[debug] 		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.fusesource.jansi/jansi/1.4/jars/jansi.jar
-[debug] CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.fusesource.jansi/jansi/1.4/jars/jansi.jar
-[debug] 		tried C:\Users\Michael\.ivy2\local\org.fusesource.jansi\jansi\1.4\jars\jansi.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.4/jansi-1.4.jar
-[debug] 	found org.fusesource.jansi#jansi;1.4 in public
+[debug] sbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4
+[debug] 	found org.fusesource.jansi#jansi;1.4 in sbt-chain
 [debug] == resolving dependencies org.scala-lang#jline;2.10.7->org.fusesource.jansi#jansi;1.4 [compile->compile(*)]
 [debug] == resolving dependencies default#frontend-build-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.7 [scala-tool->default]
 [debug] == resolving dependencies default#frontend-build-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.7 [scala-tool->runtime]
@@ -6053,31 +6007,21 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.17!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/jline/2.10.7/jline-2.10.7.jar
-[info] downloading https://repo1.maven.org/maven2/org/scala-lang/jline/2.10.7/jline-2.10.7.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/jline/2.10.7/jline-2.10.7.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/jline/2.10.7/jline-2.10.7.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/jline/2.10.7/jline-2.10.7.jar
-[info] 	[SUCCESSFUL ] org.scala-lang#jline;2.10.7!jline.jar (43ms)
-[debug] 		tried https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.4/jansi-1.4.jar
-[info] downloading https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.4/jansi-1.4.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.4/jansi-1.4.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.4/jansi-1.4.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.4/jansi-1.4.jar
-[info] 	[SUCCESSFUL ] org.fusesource.jansi#jansi;1.4!jansi.jar (32ms)
-[debug] :: resolution report :: resolve 2498ms :: artifacts dl 99ms
-[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT compile produced in C:\Users\Michael\Downloads\Lab-2-Ebean\Lab-2-Ebean\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-compile.xml
-[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT runtime produced in C:\Users\Michael\Downloads\Lab-2-Ebean\Lab-2-Ebean\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-runtime.xml
-[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT test produced in C:\Users\Michael\Downloads\Lab-2-Ebean\Lab-2-Ebean\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-test.xml
-[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT provided produced in C:\Users\Michael\Downloads\Lab-2-Ebean\Lab-2-Ebean\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-provided.xml
-[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT optional produced in C:\Users\Michael\Downloads\Lab-2-Ebean\Lab-2-Ebean\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-optional.xml
-[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT compile-internal produced in C:\Users\Michael\Downloads\Lab-2-Ebean\Lab-2-Ebean\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-compile-internal.xml
-[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT runtime-internal produced in C:\Users\Michael\Downloads\Lab-2-Ebean\Lab-2-Ebean\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-runtime-internal.xml
-[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT test-internal produced in C:\Users\Michael\Downloads\Lab-2-Ebean\Lab-2-Ebean\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-test-internal.xml
-[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT plugin produced in C:\Users\Michael\Downloads\Lab-2-Ebean\Lab-2-Ebean\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-plugin.xml
-[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT sources produced in C:\Users\Michael\Downloads\Lab-2-Ebean\Lab-2-Ebean\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-sources.xml
-[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT docs produced in C:\Users\Michael\Downloads\Lab-2-Ebean\Lab-2-Ebean\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-docs.xml
-[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT pom produced in C:\Users\Michael\Downloads\Lab-2-Ebean\Lab-2-Ebean\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-pom.xml
-[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT scala-tool produced in C:\Users\Michael\Downloads\Lab-2-Ebean\Lab-2-Ebean\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-scala-tool.xml
-[debug] 	resolve done (2498ms resolve - 99ms download)
+[debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.7!jline.jar
+[debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
+[debug] :: resolution report :: resolve 698ms :: artifacts dl 28ms
+[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT compile produced in C:\Users\Michael\code\classes\CS4345-SWEPrinciples\cs4345-intellic-socialnetwork\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-compile.xml
+[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT runtime produced in C:\Users\Michael\code\classes\CS4345-SWEPrinciples\cs4345-intellic-socialnetwork\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-runtime.xml
+[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT test produced in C:\Users\Michael\code\classes\CS4345-SWEPrinciples\cs4345-intellic-socialnetwork\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-test.xml
+[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT provided produced in C:\Users\Michael\code\classes\CS4345-SWEPrinciples\cs4345-intellic-socialnetwork\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-provided.xml
+[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT optional produced in C:\Users\Michael\code\classes\CS4345-SWEPrinciples\cs4345-intellic-socialnetwork\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-optional.xml
+[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT compile-internal produced in C:\Users\Michael\code\classes\CS4345-SWEPrinciples\cs4345-intellic-socialnetwork\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-compile-internal.xml
+[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT runtime-internal produced in C:\Users\Michael\code\classes\CS4345-SWEPrinciples\cs4345-intellic-socialnetwork\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-runtime-internal.xml
+[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT test-internal produced in C:\Users\Michael\code\classes\CS4345-SWEPrinciples\cs4345-intellic-socialnetwork\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-test-internal.xml
+[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT plugin produced in C:\Users\Michael\code\classes\CS4345-SWEPrinciples\cs4345-intellic-socialnetwork\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-plugin.xml
+[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT sources produced in C:\Users\Michael\code\classes\CS4345-SWEPrinciples\cs4345-intellic-socialnetwork\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-sources.xml
+[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT docs produced in C:\Users\Michael\code\classes\CS4345-SWEPrinciples\cs4345-intellic-socialnetwork\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-docs.xml
+[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT pom produced in C:\Users\Michael\code\classes\CS4345-SWEPrinciples\cs4345-intellic-socialnetwork\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-pom.xml
+[debug] 	report for default#frontend-build-build;0.1-SNAPSHOT scala-tool produced in C:\Users\Michael\code\classes\CS4345-SWEPrinciples\cs4345-intellic-socialnetwork\Frontend\project\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-frontend-build-build-scala-tool.xml
+[debug] 	resolve done (698ms resolve - 28ms download)
 [info] Done updating.

@@ -16,8 +16,6 @@ public class User {
 
     private String password;
 
-    private List<Long> followers;
-
     public String getUsername() {
         return username;
     }
@@ -26,11 +24,15 @@ public class User {
         this.username = username;
     }
 
+    private List<Long> followers;
+
     public String getPassword() {
         return password;
     }
 
-    public void setPassword(String password) { this.password = password; }
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public List<Long> getFollowers() { return followers; }
 
@@ -42,10 +44,14 @@ public class User {
 
         WSClient ws = play.test.WSTestClient.newClient(9005);
         //get followers data
+        WSRequest request = ws.url("http://localhost:9005/followers");
+        ObjectNode res = Json.newObject();
 
-        // FIXME: UNCOMMENT WHEN WE GET GETIDFROMUSERNAME WORKING.
-//        WSRequest request = ws.url("http://localhost:9005/followers?userID="+[GET ID FROM USERNAME]);
-        WSRequest request = ws.url("http://localhost:9005/followers?userID=2");
+        int i = 1;
+        for (Long currId : this.followers) {
+            res.put("follower-"+i, currId);
+            i++;
+        }
 
         return request.addHeader("Content-Type", "application/json")
                 .get()
@@ -90,15 +96,4 @@ public class User {
                 });
     }
 
-    public CompletionStage<WSResponse> getIDFromUsername(String username) {
-        WSClient ws = play.test.WSTestClient.newClient(9005);
-        //get followers data
-        WSRequest request = ws.url("http://localhost:9005/id_from_username?username="+username);
-
-        return request.addHeader("Content-Type", "application/json")
-                .get()
-                .thenApply((WSResponse r) -> {
-                    return r;
-                });
-    }
 }

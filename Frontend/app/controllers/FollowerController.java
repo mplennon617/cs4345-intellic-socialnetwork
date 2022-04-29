@@ -1,11 +1,7 @@
 package controllers;
 
-import com.fasterxml.jackson.databind.JsonNode;
 import play.data.Form;
 import play.data.FormFactory;
-import play.libs.Json;
-import play.libs.ws.WSClient;
-import play.libs.ws.WSRequest;
 import play.mvc.Controller;
 import play.mvc.Result;
 import play.libs.concurrent.HttpExecutionContext;
@@ -15,12 +11,10 @@ import views.html.*;
 import javax.inject.Inject;
 import java.util.concurrent.CompletionStage;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Iterator;
-
+/**
+ * Software Service Market Place
+ */
 public class FollowerController extends Controller {
-
 
     @Inject
     HttpExecutionContext ec;
@@ -41,23 +35,21 @@ public class FollowerController extends Controller {
 
     public CompletionStage<Result> followerHandler() {
 
-        // TODO: THIS IS FOR FORM SUBMISSION. IT'S ONLY USED FOR POST REQUESTS
-        // WE CANNOT USE A FORM FOR THIS
+        Form<User> followerForm = formFactory.form(User.class).bindFromRequest();
+        if (followerForm.hasErrors()){
+            return (CompletionStage<Result>) badRequest(views.html.login.render(""));  // send parameter like register so that user could know
+        }
 
-        User user = new User();
-
-        return user.gatherFollowers()
+        return followerForm.get().gatherFollowers()
                 .thenApplyAsync((WSResponse r) -> {
-                    System.out.println(r.asJson());
-                    JsonNode followerJson = r.asJson();
-                    if (r.getStatus() == 200) {
+                    if (r.getStatus() == 200 && r.asJson() != null && r.asJson().asBoolean()) {
 
-                        List<String> followerNames = new ArrayList<String>();
-                        for (int i = 0; i < followerJson.size(); i++) {
-                            followerNames.add(followerJson.get("user"+(i+1)).asText());
-                        }
-
-                        return ok(views.html.followers.render(followerNames.toString()));
+                        //
+                        System.out.println(r.asJson());
+                        // add username to session
+                        session("username",followerForm.get().getUsername());   // store username in session for your project
+                        // redirect to index page, to display all categories
+                        return ok(views.html.followers.render("Welcome!!! " + followerForm.get().getFollowers()));
                     } else {
                         System.out.println("response null");
                         String authorizeMessage = "Incorrect Username or Password ";

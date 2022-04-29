@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/Michael/code/classes/CS4345-SWEPrinciples/cs4345-intellic-socialnetwork/Frontend/conf/routes
-// @DATE:Thu Apr 28 19:54:48 CDT 2022
+// @SOURCE:C:/Users/Michael/Downloads/Lab-2-Ebean/Lab-2-Ebean/Frontend/conf/routes
+// @DATE:Tue Mar 29 22:34:19 CDT 2022
 
 import play.api.mvc.Call
 
@@ -18,13 +18,13 @@ package controllers {
     }
 
   
-    // @LINE:13
+    // @LINE:12
     def signupHandler(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "register")
     }
   
-    // @LINE:11
+    // @LINE:10
     def signup(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "signup")
@@ -36,7 +36,7 @@ package controllers {
       Call("GET", _prefix)
     }
   
-    // @LINE:9
+    // @LINE:8
     def loginHandler(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "login")
@@ -44,38 +44,17 @@ package controllers {
   
   }
 
-  // @LINE:19
+  // @LINE:15
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:19
+    // @LINE:15
     def at(file:String): Call = {
       implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public"))); _rrc
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[String]].unbind("file", file))
-    }
-  
-  }
-
-  // @LINE:8
-  class ReverseFollowerController(_prefix: => String) {
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:16
-    def followerHandler(): Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "followers/get")
-    }
-  
-    // @LINE:8
-    def viewFollowers(): Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "followers")
     }
   
   }

@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/Michael/code/classes/CS4345-SWEPrinciples/cs4345-intellic-socialnetwork/Frontend/conf/routes
-// @DATE:Thu Apr 28 19:54:48 CDT 2022
+// @SOURCE:C:/Users/Michael/Downloads/Lab-2-Ebean/Lab-2-Ebean/Frontend/conf/routes
+// @DATE:Tue Mar 29 22:34:19 CDT 2022
 
 package router
 
@@ -15,10 +15,8 @@ import _root_.play.libs.F
 class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:7
-  HomeController_2: controllers.HomeController,
-  // @LINE:8
-  FollowerController_1: controllers.FollowerController,
-  // @LINE:19
+  HomeController_1: controllers.HomeController,
+  // @LINE:15
   Assets_0: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -26,17 +24,15 @@ class Routes(
    @javax.inject.Inject()
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:7
-    HomeController_2: controllers.HomeController,
-    // @LINE:8
-    FollowerController_1: controllers.FollowerController,
-    // @LINE:19
+    HomeController_1: controllers.HomeController,
+    // @LINE:15
     Assets_0: controllers.Assets
-  ) = this(errorHandler, HomeController_2, FollowerController_1, Assets_0, "/")
+  ) = this(errorHandler, HomeController_1, Assets_0, "/")
 
   def withPrefix(addPrefix: String): Routes = {
     val prefix = play.api.routing.Router.concatPrefix(addPrefix, this.prefix)
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, HomeController_2, FollowerController_1, Assets_0, prefix)
+    new Routes(errorHandler, HomeController_1, Assets_0, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -45,11 +41,9 @@ class Routes(
 
   def documentation = List(
     ("""GET""", this.prefix, """controllers.HomeController.index()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """followers""", """controllers.FollowerController.viewFollowers()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.HomeController.loginHandler()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signup""", """controllers.HomeController.signup()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """register""", """controllers.HomeController.signupHandler()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """followers/get""", """controllers.FollowerController.followerHandler()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.at(path:String = "/public", file:String)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -63,7 +57,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix)))
   )
   private[this] lazy val controllers_HomeController_index0_invoker = createInvoker(
-    HomeController_2.index(),
+    HomeController_1.index(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.HomeController",
@@ -77,29 +71,11 @@ class Routes(
   )
 
   // @LINE:8
-  private[this] lazy val controllers_FollowerController_viewFollowers1_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("followers")))
-  )
-  private[this] lazy val controllers_FollowerController_viewFollowers1_invoker = createInvoker(
-    FollowerController_1.viewFollowers(),
-    play.api.routing.HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.FollowerController",
-      "viewFollowers",
-      Nil,
-      "GET",
-      this.prefix + """followers""",
-      """""",
-      Seq()
-    )
-  )
-
-  // @LINE:9
-  private[this] lazy val controllers_HomeController_loginHandler2_route = Route("GET",
+  private[this] lazy val controllers_HomeController_loginHandler1_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("login")))
   )
-  private[this] lazy val controllers_HomeController_loginHandler2_invoker = createInvoker(
-    HomeController_2.loginHandler(),
+  private[this] lazy val controllers_HomeController_loginHandler1_invoker = createInvoker(
+    HomeController_1.loginHandler(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.HomeController",
@@ -112,12 +88,12 @@ class Routes(
     )
   )
 
-  // @LINE:11
-  private[this] lazy val controllers_HomeController_signup3_route = Route("GET",
+  // @LINE:10
+  private[this] lazy val controllers_HomeController_signup2_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("signup")))
   )
-  private[this] lazy val controllers_HomeController_signup3_invoker = createInvoker(
-    HomeController_2.signup(),
+  private[this] lazy val controllers_HomeController_signup2_invoker = createInvoker(
+    HomeController_1.signup(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.HomeController",
@@ -130,12 +106,12 @@ class Routes(
     )
   )
 
-  // @LINE:13
-  private[this] lazy val controllers_HomeController_signupHandler4_route = Route("GET",
+  // @LINE:12
+  private[this] lazy val controllers_HomeController_signupHandler3_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("register")))
   )
-  private[this] lazy val controllers_HomeController_signupHandler4_invoker = createInvoker(
-    HomeController_2.signupHandler(),
+  private[this] lazy val controllers_HomeController_signupHandler3_invoker = createInvoker(
+    HomeController_1.signupHandler(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.HomeController",
@@ -148,29 +124,11 @@ class Routes(
     )
   )
 
-  // @LINE:16
-  private[this] lazy val controllers_FollowerController_followerHandler5_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("followers/get")))
-  )
-  private[this] lazy val controllers_FollowerController_followerHandler5_invoker = createInvoker(
-    FollowerController_1.followerHandler(),
-    play.api.routing.HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.FollowerController",
-      "followerHandler",
-      Nil,
-      "GET",
-      this.prefix + """followers/get""",
-      """ FIXME: CHANGE TO GETIDFROMUSERNAME WHEN WE GET IT WORKING ON THE BACKEND""",
-      Seq()
-    )
-  )
-
-  // @LINE:19
-  private[this] lazy val controllers_Assets_at6_route = Route("GET",
+  // @LINE:15
+  private[this] lazy val controllers_Assets_at4_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_at6_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at4_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -190,43 +148,31 @@ class Routes(
     // @LINE:7
     case controllers_HomeController_index0_route(params@_) =>
       call { 
-        controllers_HomeController_index0_invoker.call(HomeController_2.index())
+        controllers_HomeController_index0_invoker.call(HomeController_1.index())
       }
   
     // @LINE:8
-    case controllers_FollowerController_viewFollowers1_route(params@_) =>
+    case controllers_HomeController_loginHandler1_route(params@_) =>
       call { 
-        controllers_FollowerController_viewFollowers1_invoker.call(FollowerController_1.viewFollowers())
+        controllers_HomeController_loginHandler1_invoker.call(HomeController_1.loginHandler())
       }
   
-    // @LINE:9
-    case controllers_HomeController_loginHandler2_route(params@_) =>
+    // @LINE:10
+    case controllers_HomeController_signup2_route(params@_) =>
       call { 
-        controllers_HomeController_loginHandler2_invoker.call(HomeController_2.loginHandler())
+        controllers_HomeController_signup2_invoker.call(HomeController_1.signup())
       }
   
-    // @LINE:11
-    case controllers_HomeController_signup3_route(params@_) =>
+    // @LINE:12
+    case controllers_HomeController_signupHandler3_route(params@_) =>
       call { 
-        controllers_HomeController_signup3_invoker.call(HomeController_2.signup())
+        controllers_HomeController_signupHandler3_invoker.call(HomeController_1.signupHandler())
       }
   
-    // @LINE:13
-    case controllers_HomeController_signupHandler4_route(params@_) =>
-      call { 
-        controllers_HomeController_signupHandler4_invoker.call(HomeController_2.signupHandler())
-      }
-  
-    // @LINE:16
-    case controllers_FollowerController_followerHandler5_route(params@_) =>
-      call { 
-        controllers_FollowerController_followerHandler5_invoker.call(FollowerController_1.followerHandler())
-      }
-  
-    // @LINE:19
-    case controllers_Assets_at6_route(params@_) =>
+    // @LINE:15
+    case controllers_Assets_at4_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_at6_invoker.call(Assets_0.at(path, file))
+        controllers_Assets_at4_invoker.call(Assets_0.at(path, file))
       }
   }
 }

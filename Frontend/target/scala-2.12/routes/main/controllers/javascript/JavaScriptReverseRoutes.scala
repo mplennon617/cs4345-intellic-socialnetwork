@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/Michael/code/classes/CS4345-SWEPrinciples/cs4345-intellic-socialnetwork/Frontend/conf/routes
-// @DATE:Thu Apr 28 19:54:48 CDT 2022
+// @SOURCE:C:/Users/Michael/Downloads/Lab-2-Ebean/Lab-2-Ebean/Frontend/conf/routes
+// @DATE:Tue Mar 29 22:34:19 CDT 2022
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -19,7 +19,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:13
+    // @LINE:12
     def signupHandler: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.signupHandler",
       """
@@ -29,7 +29,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:11
+    // @LINE:10
     def signup: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.signup",
       """
@@ -49,7 +49,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:9
+    // @LINE:8
     def loginHandler: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.loginHandler",
       """
@@ -61,7 +61,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:19
+  // @LINE:15
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -69,42 +69,12 @@ package controllers.javascript {
     }
 
   
-    // @LINE:19
+    // @LINE:15
     def at: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.at",
       """
         function(file1) {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "assets/" + (""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("file", file1)})
-        }
-      """
-    )
-  
-  }
-
-  // @LINE:8
-  class ReverseFollowerController(_prefix: => String) {
-
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:16
-    def followerHandler: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.FollowerController.followerHandler",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "followers/get"})
-        }
-      """
-    )
-  
-    // @LINE:8
-    def viewFollowers: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.FollowerController.viewFollowers",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "followers"})
         }
       """
     )

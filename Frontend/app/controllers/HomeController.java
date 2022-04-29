@@ -37,7 +37,7 @@ public class HomeController extends Controller {
     /**
      * Index page
      */
-    public Result index() {
+    public Result loginPage() {
         return ok(views.html.login.render(""));
     }
 
@@ -57,12 +57,13 @@ public class HomeController extends Controller {
 
         return loginForm.get().checkAuthorized()
             .thenApplyAsync((WSResponse r) -> {
-                if (r.getStatus() == 200 && r.asJson() != null && r.asJson().asBoolean()) {
+                if (r.getStatus() == 200 && r.asJson() != null && r.asJson().asBoolean() && loginForm.get().getUsername() != null) {
+
                     System.out.println(r.asJson());
                     // add username to session
-                    session("username",loginForm.get().getUsername());   // store username in session for your project
+                    session("username", loginForm.get().getUsername());   // store username in session for your project
                     // redirect to index page, to display all categories
-                    return ok(views.html.index.render("Welcome!!! " + loginForm.get().getUsername()));
+                    return ok(views.html.followers.render( loginForm.get().getFollowers().toString(),"Welcome " +  loginForm.get().getUsername())+"!");
                 } else {
                     System.out.println("response null");
                     String authorizeMessage = "Incorrect Username or Password ";

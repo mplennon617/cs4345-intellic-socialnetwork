@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Michael/code/classes/CS4345-SWEPrinciples/cs4345-intellic-socialnetwork/Frontend/conf/routes
-// @DATE:Thu Apr 28 20:03:09 CDT 2022
+// @DATE:Thu Apr 28 20:28:16 CDT 2022
 
 package router
 
@@ -44,7 +44,7 @@ class Routes(
   }
 
   def documentation = List(
-    ("""GET""", this.prefix, """controllers.HomeController.index()"""),
+    ("""GET""", this.prefix, """controllers.HomeController.loginPage()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """followers""", """controllers.FollowerController.viewFollowers()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.HomeController.loginHandler()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signup""", """controllers.HomeController.signup()"""),
@@ -59,15 +59,15 @@ class Routes(
 
 
   // @LINE:7
-  private[this] lazy val controllers_HomeController_index0_route = Route("GET",
+  private[this] lazy val controllers_HomeController_loginPage0_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix)))
   )
-  private[this] lazy val controllers_HomeController_index0_invoker = createInvoker(
-    HomeController_2.index(),
+  private[this] lazy val controllers_HomeController_loginPage0_invoker = createInvoker(
+    HomeController_2.loginPage(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.HomeController",
-      "index",
+      "loginPage",
       Nil,
       "GET",
       this.prefix + """""",
@@ -188,9 +188,9 @@ class Routes(
   def routes: PartialFunction[RequestHeader, Handler] = {
   
     // @LINE:7
-    case controllers_HomeController_index0_route(params@_) =>
+    case controllers_HomeController_loginPage0_route(params@_) =>
       call { 
-        controllers_HomeController_index0_invoker.call(HomeController_2.index())
+        controllers_HomeController_loginPage0_invoker.call(HomeController_2.loginPage())
       }
   
     // @LINE:8

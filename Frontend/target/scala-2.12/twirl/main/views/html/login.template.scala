@@ -52,7 +52,7 @@ Seq[Any](format.raw/*1.28*/("""
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo">Scientist Social Network</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="/login">Login</a></li>
+                    <li><a href="/">Login</a></li>
                     <li><a href="/register">Register</a></li>
                     <li><a href="/followers">Followers</a></li>
                 </ul>
@@ -60,9 +60,10 @@ Seq[Any](format.raw/*1.28*/("""
         </nav>
 
         <div class="row">
-            <div class="card col s8 m4 offset-m4">
+            <div class="card col s8 offset-s2 m4 offset-m4">
                 <div class="card-panel">
-                    <form action=""""),_display_(/*33.36*/routes/*33.42*/.HomeController.loginHandler()),format.raw/*33.72*/("""" method="GET">
+                    <h4 class="focused blue-text text-darken-2">Login</h4>
+                    <form action=""""),_display_(/*34.36*/routes/*34.42*/.HomeController.loginHandler()),format.raw/*34.72*/("""" method="GET">
 
                         <div class="row">
                             <div class="input-field col s12">
@@ -78,16 +79,16 @@ Seq[Any](format.raw/*1.28*/("""
                                 <label for="password">Password</label>
                             </div>
                         </div>
-                        """),_display_(/*49.26*/if(authorizeMessage!= null)/*49.53*/{_display_(Seq[Any](format.raw/*49.54*/("""
-                            """),format.raw/*50.29*/("""<div class="alert alert-primary" role="alert">
-                            """),_display_(/*51.30*/authorizeMessage),format.raw/*51.46*/("""
-                            """),format.raw/*52.29*/("""</div>
+                        """),_display_(/*50.26*/if(authorizeMessage!= null)/*50.53*/{_display_(Seq[Any](format.raw/*50.54*/("""
+                            """),format.raw/*51.29*/("""<div class="alert alert-primary" role="alert">
+                            """),_display_(/*52.30*/authorizeMessage),format.raw/*52.46*/("""
+                            """),format.raw/*53.29*/("""</div>
                             <br>
-                        """)))}),format.raw/*54.26*/("""
-                        """),format.raw/*55.25*/("""<div class="row">
+                        """)))}),format.raw/*55.26*/("""
+                        """),format.raw/*56.25*/("""<div class="row">
                             <button id="api-search-button" class="btn col s4 offset-s4" type="submit">Submit</button>
                         </div>
-                        <a href=""""),_display_(/*58.35*/routes/*58.41*/.HomeController.signup()),format.raw/*58.65*/("""">Don't have an account?</a>
+                        <a href=""""),_display_(/*59.35*/routes/*59.41*/.HomeController.signup()),format.raw/*59.65*/("""">Don't have an account?</a>
                     </form>
                 </div>
             </div>
@@ -110,11 +111,11 @@ Seq[Any](format.raw/*1.28*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2022-04-28T20:02:58.803
+                  DATE: 2022-04-28T20:28:16.607
                   SOURCE: C:/Users/Michael/code/classes/CS4345-SWEPrinciples/cs4345-intellic-socialnetwork/Frontend/app/views/login.scala.html
-                  HASH: 2d2d1fdaab8b2db81b3931fc31803f3a8b6f104b
-                  MATRIX: 948->1|1069->27|1097->29|2910->1817|2925->1823|2976->1853|3747->2597|3783->2624|3822->2625|3880->2655|3984->2732|4021->2748|4079->2778|4177->2845|4231->2871|4462->3075|4477->3081|4522->3105
-                  LINES: 28->1|33->1|34->2|65->33|65->33|65->33|81->49|81->49|81->49|82->50|83->51|83->51|84->52|86->54|87->55|90->58|90->58|90->58
+                  HASH: 6312671be8546b1d4d7051c629b49f204dc28179
+                  MATRIX: 948->1|1069->27|1097->29|2991->1898|3006->1904|3057->1934|3828->2678|3864->2705|3903->2706|3961->2736|4065->2813|4102->2829|4160->2859|4258->2926|4312->2952|4543->3156|4558->3162|4603->3186
+                  LINES: 28->1|33->1|34->2|66->34|66->34|66->34|82->50|82->50|82->50|83->51|84->52|84->52|85->53|87->55|88->56|91->59|91->59|91->59
                   -- GENERATED --
               */
           

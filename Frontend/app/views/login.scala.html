@@ -20,7 +20,7 @@
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo">Scientist Social Network</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="/login">Login</a></li>
+                    <li><a href="/">Login</a></li>
                     <li><a href="/register">Register</a></li>
                     <li><a href="/followers">Followers</a></li>
                 </ul>
@@ -28,8 +28,9 @@
         </nav>
 
         <div class="row">
-            <div class="card col s8 m4 offset-m4">
+            <div class="card col s8 offset-s2 m4 offset-m4">
                 <div class="card-panel">
+                    <h4 class="focused blue-text text-darken-2">Login</h4>
                     <form action="@routes.HomeController.loginHandler()" method="GET">
 
                         <div class="row">

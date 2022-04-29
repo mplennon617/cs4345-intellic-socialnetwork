@@ -22,15 +22,15 @@ import play.mvc.Http.Context.Implicit._
 import play.data._
 import play.core.j.PlayFormsMagicForJava._
 
-object followers extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template1[String,play.twirl.api.HtmlFormat.Appendable] {
+object followers extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template2[String,String,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(followers: String):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(followers: String, message: String):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*1.21*/("""
+Seq[Any](format.raw/*1.38*/("""
 """),format.raw/*2.1*/("""<!DOCTYPE html>
 <html>
     <head>
@@ -52,26 +52,18 @@ Seq[Any](format.raw/*1.21*/("""
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo">Scientist Social Network</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="/login">Login</a></li>
+                    <li><a href="/">Login</a></li>
                     <li><a href="/register">Register</a></li>
                     <li><a href="/followers">Followers</a></li>
                 </ul>
             </div>
         </nav>
 
-        <header class="topbar">
-            <h1 class="focused" style="font-size: 37px;
-                color: #57a957">
-                <strong>Followers</strong>
-            </h1>
-        </header>
-
-
         <div class="row">
-            <div class="card col s4 offset-s4 ">
+            <div class="card col s8 offset-s2 m4 offset-m4">
                 <div class="card-panel">
-                    <h3 class="focused blue-text text-darken-2">Followers</h3>
-                    <p>"""),_display_(/*42.25*/followers),format.raw/*42.34*/("""</p>
+                    <h4 class="focused blue-text text-darken-2">Followers</h4>
+                    <p>"""),_display_(/*34.25*/followers),format.raw/*34.34*/("""</p>
                     <ul class="collection">
                         <li class="collection-item avatar">
                             <i class="material-icons circle blue">JD</i>
@@ -94,9 +86,9 @@ Seq[Any](format.raw/*1.21*/("""
     }
   }
 
-  def render(followers:String): play.twirl.api.HtmlFormat.Appendable = apply(followers)
+  def render(followers:String,message:String): play.twirl.api.HtmlFormat.Appendable = apply(followers,message)
 
-  def f:((String) => play.twirl.api.HtmlFormat.Appendable) = (followers) => apply(followers)
+  def f:((String,String) => play.twirl.api.HtmlFormat.Appendable) = (followers,message) => apply(followers,message)
 
   def ref: this.type = this
 
@@ -105,11 +97,11 @@ Seq[Any](format.raw/*1.21*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2022-04-28T20:02:58.791
+                  DATE: 2022-04-28T20:35:52.472
                   SOURCE: C:/Users/Michael/code/classes/CS4345-SWEPrinciples/cs4345-intellic-socialnetwork/Frontend/app/views/followers.scala.html
-                  HASH: 1dea8941ba6fa14369bb5bcd68309c07d48cbc22
-                  MATRIX: 952->1|1066->20|1094->22|3184->2087|3214->2096
-                  LINES: 28->1|33->1|34->2|74->42|74->42
+                  HASH: 2aa82fc340533636ffd27bc16280eba979a1ed00
+                  MATRIX: 959->1|1090->37|1118->39|3005->1901|3035->1910
+                  LINES: 28->1|33->1|34->2|66->34|66->34
                   -- GENERATED --
               */
           

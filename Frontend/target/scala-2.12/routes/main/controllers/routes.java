@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Michael/code/classes/CS4345-SWEPrinciples/cs4345-intellic-socialnetwork/Frontend/conf/routes
-// @DATE:Thu Apr 28 20:03:09 CDT 2022
+// @DATE:Thu Apr 28 20:28:16 CDT 2022
 
 package controllers;
 

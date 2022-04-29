@@ -53,7 +53,7 @@ Seq[Any](format.raw/*1.19*/("""
                 <div class="nav-wrapper">
                     <a href="#" class="brand-logo">Scientist Social Network</a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="/login">Login</a></li>
+                        <li><a href="/">Login</a></li>
                         <li><a href="/register">Register</a></li>
                         <li><a href="/followers">Followers</a></li>
                     </ul>
@@ -97,10 +97,10 @@ Seq[Any](format.raw/*1.19*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2022-04-28T20:02:58.795
+                  DATE: 2022-04-28T20:28:16.603
                   SOURCE: C:/Users/Michael/code/classes/CS4345-SWEPrinciples/cs4345-intellic-socialnetwork/Frontend/app/views/index.scala.html
-                  HASH: a1a1ba8621bc22ac0086d9675e1834b80e85d513
-                  MATRIX: 948->1|1038->25|1105->18|1137->64|3202->2104|3230->2111|3282->2136|3322->2167|3361->2168|3411->2190|3614->2366|3629->2372|3688->2409|3915->2605|3957->2619
+                  HASH: d87dd72b6261999cd4f4c6583ae0527e23097b45
+                  MATRIX: 948->1|1038->25|1105->18|1137->64|3197->2099|3225->2106|3277->2131|3317->2162|3356->2163|3406->2185|3609->2361|3624->2367|3683->2404|3910->2600|3952->2614
                   LINES: 28->1|31->2|34->1|35->3|68->36|68->36|70->38|70->38|70->38|71->39|73->41|73->41|73->41|79->47|80->48
                   -- GENERATED --
               */

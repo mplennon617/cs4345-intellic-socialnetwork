@@ -30,7 +30,7 @@ public class FollowerController extends Controller {
      * Followers Page
      */
     public Result viewFollowers() {
-        return ok(views.html.followers.render(null));
+        return ok(views.html.followers.render(null,""));
     }
 
     public CompletionStage<Result> followerHandler() {
@@ -41,20 +41,20 @@ public class FollowerController extends Controller {
         }
 
         return followerForm.get().gatherFollowers()
-                .thenApplyAsync((WSResponse r) -> {
-                    if (r.getStatus() == 200 && r.asJson() != null && r.asJson().asBoolean()) {
+            .thenApplyAsync((WSResponse r) -> {
+                if (r.getStatus() == 200 && r.asJson() != null && r.asJson().asBoolean()) {
 
-                        //
-                        System.out.println(r.asJson());
-                        // add username to session
-                        session("username",followerForm.get().getUsername());   // store username in session for your project
-                        // redirect to index page, to display all categories
-                        return ok(views.html.followers.render("Welcome!!! " + followerForm.get().getFollowers()));
-                    } else {
-                        System.out.println("response null");
-                        String authorizeMessage = "Incorrect Username or Password ";
-                        return badRequest(views.html.login.render(authorizeMessage));
-                    }
-                }, ec.current());
+                    //
+                    System.out.println(r.asJson());
+                    // add username to session
+                    session("username",followerForm.get().getUsername());   // store username in session for your project
+                    // redirect to index page, to display all categories
+                    return ok(views.html.followers.render(followerForm.get().getFollowers().toString(), ""));
+                } else {
+                    System.out.println("response null");
+                    String authorizeMessage = "Incorrect Username or Password ";
+                    return badRequest(views.html.login.render(authorizeMessage));
+                }
+            }, ec.current());
     }
 }

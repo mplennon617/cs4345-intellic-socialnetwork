@@ -8,6 +8,10 @@ GET     /                           controllers.HomeController.index
 # View Followers {"id":id }
 GET     /followers                  controllers.UserController.getFollowers()
 
+# View Followers {"id":id }
+GET     /id_from_username           controllers.UserController.getIDFromUsername()
+
+
 #Login
 POST    /login                      controllers.UserController.authenticate()
 

@@ -1,7 +1,11 @@
 package controllers;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import play.data.Form;
 import play.data.FormFactory;
+import play.libs.Json;
+import play.libs.ws.WSClient;
+import play.libs.ws.WSRequest;
 import play.mvc.Controller;
 import play.mvc.Result;
 import play.libs.concurrent.HttpExecutionContext;
@@ -10,6 +14,10 @@ import views.html.*;
 
 import javax.inject.Inject;
 import java.util.concurrent.CompletionStage;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Iterator;
 
 /**
  * Software Service Market Place
@@ -34,7 +42,7 @@ public class HomeController extends Controller {
     }
 
     /**
-     * Index page
+     * Register page
      */
     public Result signup() {
         return ok(views.html.register.render(null));
@@ -48,19 +56,19 @@ public class HomeController extends Controller {
         }
 
         return loginForm.get().checkAuthorized()
-                .thenApplyAsync((WSResponse r) -> {
-                    if (r.getStatus() == 200 && r.asJson() != null && r.asJson().asBoolean()) {
-                        System.out.println(r.asJson());
-                        // add username to session
-                        session("username",loginForm.get().getUsername());   // store username in session for your project
-                        // redirect to index page, to display all categories
-                        return ok(views.html.index.render("Welcome!!! " + loginForm.get().getUsername()));
-                    } else {
-                        System.out.println("response null");
-                        String authorizeMessage = "Incorrect Username or Password ";
-                        return badRequest(views.html.login.render(authorizeMessage));
-                    }
-                }, ec.current());
+            .thenApplyAsync((WSResponse r) -> {
+                if (r.getStatus() == 200 && r.asJson() != null && r.asJson().asBoolean()) {
+                    System.out.println(r.asJson());
+                    // add username to session
+                    session("username",loginForm.get().getUsername());   // store username in session for your project
+                    // redirect to index page, to display all categories
+                    return ok(views.html.index.render("Welcome!!! " + loginForm.get().getUsername()));
+                } else {
+                    System.out.println("response null");
+                    String authorizeMessage = "Incorrect Username or Password ";
+                    return badRequest(views.html.login.render(authorizeMessage));
+                }
+            }, ec.current());
     }
 
     public CompletionStage<Result> signupHandler() {
@@ -69,6 +77,7 @@ public class HomeController extends Controller {
         if (registrationForm.hasErrors()){
             return (CompletionStage<Result>) badRequest(views.html.register.render(null));
         }
+
         return registrationForm.get().registerUser()
                 .thenApplyAsync((WSResponse r) -> {
                     if (r.getStatus() == 200 && r.asJson() != null) {

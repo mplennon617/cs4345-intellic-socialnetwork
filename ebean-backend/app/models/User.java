@@ -23,6 +23,13 @@ public class User extends Model {
 
     public static Find<Long, User> find = new Find<Long, User>(){};
 
+    public static User findByID(long name) {
+        return User.find
+                .where()
+                .eq("id", name)
+                .findUnique();
+    }
+
     public static User findByName(String name) {
         return User.find
                 .where()

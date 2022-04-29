@@ -4,8 +4,8 @@
 # --- !Ups
 
 create table follower (
-  follower_id                   varchar(255),
-  user_id                       varchar(255)
+  follower_id                   bigint,
+  user_id                       bigint
 );
 
 create table user (

@@ -11,10 +11,10 @@ public class Follower extends Model {
     private static final long serialVersionUID = 1L;
 
     @Constraints.Required
-    public String followerID;
+    public long followerID;
 
     @Constraints.Required
-    public String userID;
+    public long userID;
 
     public static Find<Long, Follower> find = new Find<Long, Follower>(){};
 

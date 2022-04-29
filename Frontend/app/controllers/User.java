@@ -38,38 +38,14 @@ public class User {
         this.followers = followers;
     }
 
-//    public CompletionStage<WSResponse> getFollowers() {
-//
-//        WSClient ws = play.test.WSTestClient.newClient(9005);
-//        //get followers data
-//        WSRequest request = ws.url("http://localhost:9005/followers");
-//        ObjectNode res = Json.newObject();
-//
-//        int i = 1;
-//        for (Long currId : this.followers) {
-//            res.put("follower-"+i, currId);
-//            i++;
-//        }
-//
-//        return request.addHeader("Content-Type", "application/json")
-//                .get()
-//                .thenApply((WSResponse r) -> {
-//                    return r;
-//                });
-//    }
-
     public CompletionStage<WSResponse> gatherFollowers() {
 
         WSClient ws = play.test.WSTestClient.newClient(9005);
         //get followers data
-        WSRequest request = ws.url("http://localhost:9005/followers");
-        ObjectNode res = Json.newObject();
 
-        int i = 1;
-        for (Long currId : this.followers) {
-            res.put("follower-"+i, currId);
-            i++;
-        }
+        // FIXME: UNCOMMENT WHEN WE GET GETIDFROMUSERNAME WORKING.
+//        WSRequest request = ws.url("http://localhost:9005/followers?userID="+[GET ID FROM USERNAME]);
+        WSRequest request = ws.url("http://localhost:9005/followers?userID=2");
 
         return request.addHeader("Content-Type", "application/json")
                 .get()
@@ -114,4 +90,15 @@ public class User {
                 });
     }
 
+    public CompletionStage<WSResponse> getIDFromUsername(String username) {
+        WSClient ws = play.test.WSTestClient.newClient(9005);
+        //get followers data
+        WSRequest request = ws.url("http://localhost:9005/id_from_username?username="+username);
+
+        return request.addHeader("Content-Type", "application/json")
+                .get()
+                .thenApply((WSResponse r) -> {
+                    return r;
+                });
+    }
 }

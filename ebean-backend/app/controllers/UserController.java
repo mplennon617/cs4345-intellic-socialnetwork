@@ -61,7 +61,7 @@ public class UserController extends Controller {
             User user = new User();
             user.username=username;
             user.password=password;
-            user.save();
+            user.save(); // CREATE A BEAN TO PLACE INTO DATABASE
             result.put("body", username);
         }
         return ok(result);
@@ -74,8 +74,7 @@ public class UserController extends Controller {
      */
     public Result getFollowers() {
         System.out.println("Follower List");
-        JsonNode req = request().body().asJson();
-        Long id = req.get("id").asLong();
+        long id = Long.parseLong(request().getQueryString("userID"));
 
         ObjectNode result = null;
 
@@ -84,12 +83,44 @@ public class UserController extends Controller {
             result = Json.newObject();
             int i = 1;
             for (Follower l : list){
-
-                result.put(("ID"+i), l.followerID);
+                User temp = User.findByID(l.followerID);
+                result.put(("user"+i), temp.username);
                 i++;
             }
         }
         return ok(result);
+    }
+
+
+    /**
+     * Given this user's username, fetch the user's ID from the database.
+     * Used for gatherFollowers() functions on the frontend.
+     * GET
+     * @return success if valid, fail if already taken
+     */
+    public Result getIDFromUsername() {
+        System.out.println("Get ID From Username");
+
+        String username = request().getQueryString("username");
+
+        User u = User.findByName(username); // ( match where username matches )
+        ObjectNode result = null;
+
+        try {
+            if(u!=null){
+                result = Json.newObject();
+                result.put("body",u.id);
+
+                return ok(result);
+            }else{
+                // ERROR HANDLING
+                System.out.println("This username does not exist!");
+                return ok("false");
+            }
+        }
+        catch (Exception e) {
+            return ok("false");
+        }
     }
 
 }

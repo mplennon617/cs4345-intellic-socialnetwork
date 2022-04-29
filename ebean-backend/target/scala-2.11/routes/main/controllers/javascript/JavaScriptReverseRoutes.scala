@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/sinha/Documents/Spring2022/CS4345/cs4345-intellic-socialnetwork/ebean-backend/conf/routes
-// @DATE:Fri Apr 01 23:26:22 CDT 2022
+// @SOURCE:C:/Users/Michael/code/classes/CS4345-SWEPrinciples/cs4345-intellic-socialnetwork/ebean-backend/conf/routes
+// @DATE:Fri Apr 08 16:05:49 CDT 2022
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -44,6 +44,16 @@ package controllers.javascript {
 
   
     // @LINE:12
+    def getIDFromUsername: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserController.getIDFromUsername",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "id_from_username"})
+        }
+      """
+    )
+  
+    // @LINE:16
     def authenticate: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.UserController.authenticate",
       """
@@ -53,7 +63,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:16
+    // @LINE:20
     def registerNew: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.UserController.registerNew",
       """

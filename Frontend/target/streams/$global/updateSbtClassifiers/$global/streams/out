@@ -1,6 +1,7 @@
 [debug] Other repositories:
 [debug] Default repositories:
 [debug] Using inline dependencies specified in Scala.
+<<<<<<< HEAD
 [debug] :: resolving dependencies :: client#client$sbt_2.10;1.0
 [debug] 	confs: [default]
 [debug] 	validate = true
@@ -4753,3 +4754,5 @@
 [debug] :: resolution report :: resolve 165ms :: artifacts dl 32ms
 [debug] 	report for client#client$sources_2.10;1.0 default produced in C:\Users\Michael\code\classes\CS4345-SWEPrinciples\cs4345-intellic-socialnetwork\Frontend\target\scala-2.12\resolution-cache\reports\client-client$sources_2.10-default.xml
 [debug] 	resolve done (165ms resolve - 32ms download)
+=======
+>>>>>>> yash

@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="ffa6d230-5926-407e-983e-789957ec3281" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$4858cfbe1911bf636e1a$.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/project/project/target/config-classes/$4858cfbe1911bf636e1a.cache" beforeDir="false" />
@@ -225,6 +226,22 @@
       <change beforePath="$PROJECT_DIR$/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-test-internal.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-test.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterDir="false" />
+=======
+    <list default="true" id="fe12bb59-3058-46bf-b395-5545474ff805" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/app/views/followers.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/app/views/followers.scala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/logs/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/public/stylesheets/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/views/html/followers$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/views/html/followers$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/twirl/main/views/html/followers.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/twirl/main/views/html/followers.template.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/$global/$global/$global/streams/sync-exported-assets-web-assets" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/$global/$global/$global/streams/sync-exported-assets-web-assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/web-assets/assets/$global/streams/sync-assets-web-assets" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/web-assets/assets/$global/streams/sync-assets-web-assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/target/web/classes/main/META-INF/resources/webjars/client/1.0/stylesheets/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/target/web/public/main/stylesheets/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> yash
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,25 +250,6 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
-  </component>
-  <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -275,6 +273,7 @@
       </state>
     </system>
   </component>
+<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -282,19 +281,13 @@
       </list>
     </option>
   </component>
+=======
+>>>>>>> yash
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-        <option name="vmOptionsForImporter" value="-Xmx768m" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="Play2ProjectSettings">
     <option name="LANGUAGE_IMPORTS">
@@ -315,7 +308,11 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectId" id="1XQSQKQJSUZuPX7Yxqq1xaae1E3" />
+=======
+  <component name="ProjectId" id="27GNpQtYGGYXGICTdAhCXmomyQQ" />
+>>>>>>> yash
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -326,6 +323,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -339,9 +337,15 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="scala_project_settings_configurable.last_selected_tab_index" value="0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Frontend/build.sbt" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+>>>>>>> yash
   </component>
   <component name="RunManager">
-    <configuration name="Backend Test" type="Play2FrameworkRunConfigurations" factoryName="Play 2 App" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration name="Backend" type="Play2FrameworkRunConfigurations" factoryName="Play 2 App" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="ebean-backend" />
       <option name="allowRunningInParallel" value="false" />
       <option name="enableSbtGlobalPlugins" value="false" />
@@ -372,28 +376,14 @@
       </method>
     </configuration>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SvnConfiguration">
-    <configuration>$USER_HOME$/.subversion</configuration>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ffa6d230-5926-407e-983e-789957ec3281" name="Default Changelist" comment="" />
-      <created>1580976807858</created>
+      <changelist id="fe12bb59-3058-46bf-b395-5545474ff805" name="Changes" comment="" />
+      <created>1648942645772</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1580976807858</updated>
       <workItem from="1580976813091" duration="107000" />
       <workItem from="1580976939324" duration="3409000" />
@@ -409,6 +399,17 @@
       <workItem from="1648773274724" duration="4471000" />
       <workItem from="1648856337578" duration="9991000" />
       <workItem from="1648875759302" duration="19000" />
+=======
+      <updated>1648942645772</updated>
+      <workItem from="1648942646989" duration="79000" />
+      <workItem from="1648942813086" duration="272000" />
+      <workItem from="1648943101759" duration="990000" />
+      <workItem from="1649300464229" duration="3333000" />
+      <workItem from="1649448239513" duration="7050000" />
+      <workItem from="1649457351518" duration="598000" />
+      <workItem from="1651192551093" duration="2981000" />
+      <workItem from="1651198558110" duration="660000" />
+>>>>>>> yash
     </task>
     <servers />
   </component>
@@ -431,23 +432,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/controllers/UserController.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="4" />
+          <line>105</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/controllers/UserController.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/controllers/UserController.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/controllers/UserController.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="7" />
+          <line>76</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

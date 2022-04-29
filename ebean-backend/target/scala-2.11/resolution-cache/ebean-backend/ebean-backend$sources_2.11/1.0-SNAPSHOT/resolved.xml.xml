@@ -4,7 +4,11 @@
 		module="ebean-backend$sources_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
+<<<<<<< HEAD
 		publication="20220402000253"
+=======
+		publication="20220402184756"
+>>>>>>> yash
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

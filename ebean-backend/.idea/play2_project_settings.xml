@@ -13,7 +13,10 @@
         <entry key="root">
           <value>
             <ProjectSettingsEntry>
+<<<<<<< HEAD
               <option name="sourceDir" value="C:\Users\Michael\code\classes\CS4345-SWEPrinciples\Lab-2-Ebean\ebean-backend\app" />
+=======
+>>>>>>> yash
               <option name="confDir" value="C:\Users\Michael\code\classes\CS4345-SWEPrinciples\cs4345-intellic-socialnetwork\ebean-backend\app" />
               <option name="templateImports">
                 <list>

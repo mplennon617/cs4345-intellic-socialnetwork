@@ -4,7 +4,11 @@
 		module="ebean-backend_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
+<<<<<<< HEAD
 		publication="20220402000251"
+=======
+		publication="20220402183733"
+>>>>>>> yash
 	>
 		<description>
 		ebean-backend

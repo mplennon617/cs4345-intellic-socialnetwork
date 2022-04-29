@@ -4,7 +4,11 @@
 		module="ebean-backend-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
+<<<<<<< HEAD
 		publication="20220402000243"
+=======
+		publication="20220402003700"
+>>>>>>> yash
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

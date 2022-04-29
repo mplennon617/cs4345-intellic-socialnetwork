@@ -63,7 +63,12 @@ public class HomeController extends Controller {
                     // add username to session
                     session("username", loginForm.get().getUsername());   // store username in session for your project
                     // redirect to index page, to display all categories
-                    return ok(views.html.followers.render( loginForm.get().getFollowers().toString(),"Welcome " +  loginForm.get().getUsername())+"!");
+                    if (loginForm.get().getFollowers() != null) {
+                        return ok(views.html.followers.render( loginForm.get().getFollowers().toString(),"Welcome " +  loginForm.get().getUsername())+"!");
+                    }
+                    else {
+                        return ok(views.html.followers.render(null,"Welcome " +  loginForm.get().getUsername()+"!"));
+                    }
                 } else {
                     System.out.println("response null");
                     String authorizeMessage = "Incorrect Username or Password ";

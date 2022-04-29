@@ -45,7 +45,7 @@ Seq[Any](format.raw/*1.38*/("""
         <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
         <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
-    </head>
+        </head>
     <body>
 
         <nav>
@@ -61,9 +61,36 @@ Seq[Any](format.raw/*1.38*/("""
 
         <div class="row">
             <div class="card col s8 offset-s2 m4 offset-m4">
-                <div class="card-panel">
+
+                <h4>"""),_display_(/*33.22*/message),format.raw/*33.29*/("""</h4>
+
+                <div class="col s12">
+                    <ul class="tabs">
+                        <li class="tab col s6" id="view-follower-tab" for="view"><a href="#test1">View</a></li>
+                        <li class="tab col s6" id="find-follower-tab" for="find"><a href="#test2">Find</a></li>
+                    </ul>
+                </div>
+
+                <div class="card-panel" id="view-follower-panel">
                     <h4 class="focused blue-text text-darken-2">Followers</h4>
-                    <p>"""),_display_(/*34.25*/followers),format.raw/*34.34*/("""</p>
+                    <p>"""),_display_(/*44.25*/followers),format.raw/*44.34*/("""</p>
+                    <ul class="collection">
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle blue">JD</i>
+                            <span class="title">Jane Doe</span>
+                                <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle blue">JS</i>
+                            <span class="title">John Smith</span>
+                                <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-panel" id="find-follower-panel">
+                    <h4 class="focused blue-text text-darken-2">Find Followers</h4>
+                    <p>"""),_display_(/*61.25*/followers),format.raw/*61.34*/("""</p>
                     <ul class="collection">
                         <li class="collection-item avatar">
                             <i class="material-icons circle blue">JD</i>
@@ -97,11 +124,11 @@ Seq[Any](format.raw/*1.38*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2022-04-28T20:35:52.472
+                  DATE: 2022-04-28T22:01:34.715
                   SOURCE: C:/Users/Michael/code/classes/CS4345-SWEPrinciples/cs4345-intellic-socialnetwork/Frontend/app/views/followers.scala.html
-                  HASH: 2aa82fc340533636ffd27bc16280eba979a1ed00
-                  MATRIX: 959->1|1090->37|1118->39|3005->1901|3035->1910
-                  LINES: 28->1|33->1|34->2|66->34|66->34
+                  HASH: 37270315fc8fd1ab585770911122cdfff416ea28
+                  MATRIX: 959->1|1090->37|1118->39|2886->1782|2914->1789|3478->2326|3508->2335|4517->3317|4547->3326
+                  LINES: 28->1|33->1|34->2|65->33|65->33|76->44|76->44|93->61|93->61
                   -- GENERATED --
               */
           

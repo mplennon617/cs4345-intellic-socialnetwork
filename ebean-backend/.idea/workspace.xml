@@ -5,65 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe12bb59-3058-46bf-b395-5545474ff805" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Frontend/public/stylesheets/tabs.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/app/controllers/FollowerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/app/controllers/FollowerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/app/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/app/controllers/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/app/views/followers.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/app/views/followers.scala.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/app/views/index.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/app/views/index.scala.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/app/views/login.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/app/views/login.scala.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/app/views/register.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/app/views/register.scala.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/conf/routes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/logs/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/FollowerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/HomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/ReverseAssets.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/ReverseFollowerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/ReverseHomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/javascript/ReverseAssets.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/javascript/ReverseFollowerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/javascript/ReverseHomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/routes$javascript.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/routes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/router/Routes$$anonfun$routes$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/router/Routes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/router/RoutesPrefix$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/router/RoutesPrefix.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/routes" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/routes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/utils/HttpResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/utils/HttpUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/views/html/followers$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/views/html/followers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/views/html/index$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/views/html/index.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/views/html/login$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/views/html/login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/views/html/register$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/views/html/register.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/views/index.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/views/index.scala.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/views/login.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/views/login.scala.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/views/register.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/views/register.scala.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/routes/main/controllers/routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/routes/main/controllers/routes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/routes/main/router/Routes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/routes/main/router/Routes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/routes/main/router/RoutesPrefix.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/routes/main/router/RoutesPrefix.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/controllers/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/views/html/followers$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/classes/views/html/followers$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/twirl/main/views/html/followers.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/twirl/main/views/html/followers.template.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/twirl/main/views/html/index.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/twirl/main/views/html/index.template.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/twirl/main/views/html/login.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/twirl/main/views/html/login.template.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/scala-2.12/twirl/main/views/html/register.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/scala-2.12/twirl/main/views/html/register.template.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/$global/$global/$global/streams/sync-exported-assets-web-assets" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/$global/$global/$global/streams/sync-exported-assets-web-assets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/compile/compileIncremental/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/compile/copyResources/$global/streams/copy-resources" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/compile/copyResources/$global/streams/copy-resources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/compile/playRoutes/$global/streams/op-cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/compile/playRoutes/$global/streams/op-cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/target/streams/web-assets/assets/$global/streams/sync-assets-web-assets" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/target/streams/web-assets/assets/$global/streams/sync-assets-web-assets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.11" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.11" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.11" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.11" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,6 +137,7 @@
       <workItem from="1649448239513" duration="7050000" />
       <workItem from="1649457351518" duration="598000" />
       <workItem from="1651192551093" duration="2981000" />
+      <workItem from="1651198558110" duration="660000" />
     </task>
     <servers />
   </component>

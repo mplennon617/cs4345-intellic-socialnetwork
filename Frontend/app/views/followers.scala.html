@@ -13,7 +13,7 @@
         <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
         <link rel="stylesheet" href="https://unpkg.com/leaflet@@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
         <script src="https://unpkg.com/leaflet@@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
-    </head>
+        </head>
     <body>
 
         <nav>
@@ -29,8 +29,35 @@
 
         <div class="row">
             <div class="card col s8 offset-s2 m4 offset-m4">
-                <div class="card-panel">
+
+                <h4>@message</h4>
+
+                <div class="col s12">
+                    <ul class="tabs">
+                        <li class="tab col s6" id="view-follower-tab" for="view"><a href="#test1">View</a></li>
+                        <li class="tab col s6" id="find-follower-tab" for="find"><a href="#test2">Find</a></li>
+                    </ul>
+                </div>
+
+                <div class="card-panel" id="view-follower-panel">
                     <h4 class="focused blue-text text-darken-2">Followers</h4>
+                    <p>@followers</p>
+                    <ul class="collection">
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle blue">JD</i>
+                            <span class="title">Jane Doe</span>
+                                <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle blue">JS</i>
+                            <span class="title">John Smith</span>
+                                <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-panel" id="find-follower-panel">
+                    <h4 class="focused blue-text text-darken-2">Find Followers</h4>
                     <p>@followers</p>
                     <ul class="collection">
                         <li class="collection-item avatar">

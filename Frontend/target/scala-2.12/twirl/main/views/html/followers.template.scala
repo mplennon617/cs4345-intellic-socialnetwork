@@ -64,48 +64,79 @@ Seq[Any](format.raw/*1.38*/("""
 
                 <h4>"""),_display_(/*33.22*/message),format.raw/*33.29*/("""</h4>
 
+                <!-- Tabs -- View/Find -->
                 <div class="col s12">
                     <ul class="tabs">
-                        <li class="tab col s6" id="view-follower-tab" for="view"><a href="#test1">View</a></li>
-                        <li class="tab col s6" id="find-follower-tab" for="find"><a href="#test2">Find</a></li>
+                        <li class="tab col s6" id="view-follower-tab" for="view">
+                            <a href="#view-follower">View</a>
+                        </li>
+                        <li class="tab col s6" id="find-follower-tab" for="find">
+                            <a href="#find-follower">Find</a>
+                        </li>
                     </ul>
-                </div>
 
-                <div class="card-panel" id="view-follower-panel">
-                    <h4 class="focused blue-text text-darken-2">Followers</h4>
-                    <p>"""),_display_(/*44.25*/followers),format.raw/*44.34*/("""</p>
-                    <ul class="collection">
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle blue">JD</i>
-                            <span class="title">Jane Doe</span>
-                                <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
-                        </li>
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle blue">JS</i>
-                            <span class="title">John Smith</span>
-                                <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
-                        </li>
-                    </ul>
-                </div>
+                    <!-- View -- View Followers -->
+                    <div class="card-panel" id="view-follower">
+                        <h4 class="focused blue-text text-darken-2">Followers</h4>
+                        <p>"""),_display_(/*49.29*/followers),format.raw/*49.38*/("""</p>
+                        <ul class="collection">
+                            <li class="collection-item avatar">
+                                <i class="material-icons circle blue">JD</i>
+                                <span class="title">Jane Doe</span>
+                                    <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
+                            </li>
+                            <li class="collection-item avatar">
+                                <i class="material-icons circle blue">JS</i>
+                                <span class="title">John Smith</span>
+                                    <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
+                            </li>
+                        </ul>
+                    </div>
 
-                <div class="card-panel" id="find-follower-panel">
-                    <h4 class="focused blue-text text-darken-2">Find Followers</h4>
-                    <p>"""),_display_(/*61.25*/followers),format.raw/*61.34*/("""</p>
-                    <ul class="collection">
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle blue">JD</i>
-                            <span class="title">Jane Doe</span>
-                                <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
-                        </li>
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle blue">JS</i>
-                            <span class="title">John Smith</span>
-                                <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
-                        </li>
-                    </ul>
+                    <!-- View -- Find Followers -->
+                    <div class="card-panel" id="find-follower">
+                        <h4 class="focused blue-text text-darken-2">Find Followers</h4>
+                        <p>"""),_display_(/*67.29*/followers),format.raw/*67.38*/("""</p>
+                        <ul class="collection">
+                            <li class="collection-item avatar">
+                                <i class="material-icons circle blue">ML</i>
+                                <span class="title">Michael Lennon</span>
+                                <button id="api-search-button" class="btn right" type="submit">Follow</button>
+                                    <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
+                            </li>
+                            <li class="collection-item avatar">
+                                <i class="material-icons circle blue">FW</i>
+                                <span class="title">Freddy Wang</span>
+                                <button id="api-search-button" class="btn right" type="submit">Follow</button>
+                                    <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
+                            </li>
+                            <li class="collection-item avatar">
+                                <i class="material-icons circle blue">KW</i>
+                                <span class="title">Kirk Watson</span>
+                                <button id="api-search-button" class="btn right" type="submit">Follow</button>
+                                    <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
+                            </li>
+                            <li class="collection-item avatar">
+                                <i class="material-icons circle blue">YS</i>
+                                <span class="title">Yash Sinha</span>
+                                <button id="api-search-button" class="btn right" type="submit">Follow</button>
+                                    <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
+
+        <!-- Tabs Script -- Inline for now -->
+        <script>
+            var tabs = document.querySelectorAll('.tabs')
+            for (var i = 0; i < tabs.length; i++)"""),format.raw/*103.50*/("""{"""),format.raw/*103.51*/("""
+                """),format.raw/*104.17*/("""M.Tabs.init(tabs[i]);
+            """),format.raw/*105.13*/("""}"""),format.raw/*105.14*/("""
+        """),format.raw/*106.9*/("""</script>
+
     </body>
 </html>
 """))
@@ -124,11 +155,11 @@ Seq[Any](format.raw/*1.38*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2022-04-28T22:01:34.715
+                  DATE: 2022-04-28T22:27:40.852
                   SOURCE: C:/Users/Michael/code/classes/CS4345-SWEPrinciples/cs4345-intellic-socialnetwork/Frontend/app/views/followers.scala.html
-                  HASH: 37270315fc8fd1ab585770911122cdfff416ea28
-                  MATRIX: 959->1|1090->37|1118->39|2886->1782|2914->1789|3478->2326|3508->2335|4517->3317|4547->3326
-                  LINES: 28->1|33->1|34->2|65->33|65->33|76->44|76->44|93->61|93->61
+                  HASH: c0ffed45c8ec48b6ab249dd3d9112d3bab81e3c2
+                  MATRIX: 959->1|1090->37|1118->39|2886->1782|2914->1789|3685->2533|3715->2542|4835->3635|4865->3644|7188->5938|7218->5939|7265->5957|7329->5992|7359->5993|7397->6003
+                  LINES: 28->1|33->1|34->2|65->33|65->33|81->49|81->49|99->67|99->67|135->103|135->103|136->104|137->105|137->105|138->106
                   -- GENERATED --
               */
           

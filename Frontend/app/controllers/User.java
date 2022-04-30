@@ -46,6 +46,11 @@ public class User {
         this.followers = followers;
     }
 
+    /**
+     * TODO: IS THIS COMPLETE?
+     * Gathers all of the followers for the given user model.
+     * @return
+     */
     public CompletionStage<WSResponse> gatherFollowers() {
 
         WSClient ws = play.test.WSTestClient.newClient(9005);
@@ -66,6 +71,35 @@ public class User {
                 });
     }
 
+    /**
+     * TODO: IS THIS COMPLETE?
+     * Gathers all of the followers for the given user model.
+     * @return
+     */
+    public CompletionStage<WSResponse> gatherUnfollowed() {
+
+        WSClient ws = play.test.WSTestClient.newClient(9005);
+        //get followers data
+        WSRequest request = ws.url("http://localhost:9005/unfollowed");
+        ObjectNode res = Json.newObject();
+
+        int i = 1;
+        for (Long currId : this.followers) {
+            res.put("follower-"+i, currId);
+            i++;
+        }
+
+        return request.addHeader("Content-Type", "application/json")
+                .get()
+                .thenApply((WSResponse r) -> {
+                    return r;
+                });
+    }
+
+    /**
+     * Given user model information, check if the user exists, and login if it does.
+     * @return Completion stage containing POST request JSON as a header.
+     */
     public CompletionStage<WSResponse> checkAuthorized() {
 
         WSClient ws = play.test.WSTestClient.newClient(9005);
@@ -81,8 +115,10 @@ public class User {
                 });
     }
 
-
-
+    /**
+     * Given user model information, register the user.
+     * @return Completion stage containing POST request JSON as a header.
+     */
     public  CompletionStage<WSResponse> registerUser() {
 
         WSClient ws = play.test.WSTestClient.newClient(9005);
@@ -101,5 +137,51 @@ public class User {
                     return r;
                 });
     }
+
+    /**
+     * Given user model information, Have that user follow a different user.
+     * @return Completion stage containing POST request JSON as a header.
+     */
+    public  CompletionStage<WSResponse> follow(String otherUUID) {
+
+        WSClient ws = play.test.WSTestClient.newClient(9005);
+        // send this. user
+        ObjectNode res = Json.newObject();
+        res.put("userid", this.uuid);
+        res.put("uuid",otherUUID);
+
+        System.out.println(this.uuid);
+        System.out.println(otherUUID);
+
+        WSRequest request = ws.url("http://localhost:9005/followers");
+        return request.addHeader("Content-Type", "application/json")
+                .post(res)
+                .thenApply((WSResponse r) -> {
+                    return r;
+                });
+    }
+
+    /**
+     * Given user model information, Have that user unfollow a different user.
+     * @return Completion stage containing POST request JSON as a header.
+     */
+//    public CompletionStage<WSResponse> unfollow(String otherUUID) {
+//
+//        WSClient ws = play.test.WSTestClient.newClient(9005);
+//        // send this. user
+//        ObjectNode res = Json.newObject();
+//        res.put("userid", this.uuid);
+//        res.put("uuid",otherUUID);
+//
+//        System.out.println(this.uuid);
+//        System.out.println(otherUUID);
+//
+//        WSRequest request = ws.url("http://localhost:9005/followers");
+//        return request.addHeader("Content-Type", "application/json")
+//                .delete(res)
+//                .thenApply((WSResponse r) -> {
+//                    return r;
+//                });
+//    }
 
 }

@@ -33,6 +33,62 @@ public class FollowerController extends Controller {
         return ok(views.html.followers.render(null,""));
     }
 
+    /**
+     * Handle user following a given user.
+     * Called when clicking the corresponding 'follow' button in the followers page.
+     * @param - UUID of the follower to follow.
+     * @return
+     */
+    public CompletionStage<Result> follow(String uuid) {
+
+        // Get the uuid of the currently logged in user.
+        User u = new User();
+        u.setUniqueID(session("uuid"));
+
+        // Now that user needs to follow the follower with uuid.
+        return u.follow(uuid)
+            .thenApplyAsync((WSResponse r) -> {
+                if (r.getStatus() == 200 && r.asJson() != null && r.asJson().asBoolean()) {
+
+                    System.out.println(r.asJson());
+                    // redirect to followers page, to display all categories
+                    return ok(views.html.followers.render(u.getFollowers().toString(), "Welcome " +  session("username")+"!"));
+                } else {
+                    System.out.println("response null");
+                    String message = "An Error Occurred";
+                    return badRequest(views.html.followers.render(null, message));
+                }
+            }, ec.current());
+
+    }
+
+    /**
+     * Handle user following a given user.
+     * Called when clicking the corresponding 'follow' button in the followers page.
+     * @return
+     */
+//    public CompletionStage<Result> unfollow(String uuid) {
+//
+//        // Get the uuid of the currently logged in user.
+//        User u = new User();
+//        u.setUniqueID(session("uuid"));
+//
+//        // Now that user needs to unfollow the follower with uuid.
+//        return u.unfollow(uuid)
+//                .thenApplyAsync((WSResponse r) -> {
+//                    if (r.getStatus() == 200 && r.asJson() != null && r.asJson().asBoolean()) {
+//
+//                        System.out.println(r.asJson());
+//                        // redirect to followers page, to display all categories
+//                        return ok(views.html.followers.render(u.getFollowers().toString(), "Welcome " +  session("username")+"!"));
+//                    } else {
+//                        System.out.println("response null");
+//                        String message = "An Error Occurred";
+//                        return badRequest(views.html.followers.render(null, message));
+//                    }
+//                }, ec.current());
+//    }
+
     public CompletionStage<Result> followerHandler() {
 
         Form<User> followerForm = formFactory.form(User.class).bindFromRequest();
@@ -48,6 +104,7 @@ public class FollowerController extends Controller {
                     System.out.println(r.asJson());
                     // add username to session
                     session("username",followerForm.get().getUsername());   // store username in session for your project
+                    session("uuid",followerForm.get().getUsername());
                     // redirect to index page, to display all categories
                     return ok(views.html.followers.render(followerForm.get().getFollowers().toString(), ""));
                 } else {

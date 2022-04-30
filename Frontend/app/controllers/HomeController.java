@@ -62,6 +62,7 @@ public class HomeController extends Controller {
                     System.out.println(r.asJson());
                     // add username to session
                     session("username", loginForm.get().getUsername());   // store username in session for your project
+                    session("uuid", loginForm.get().getUniqueID());
                     // redirect to index page, to display all categories
                     if (loginForm.get().getFollowers() != null) {
                         return ok(views.html.followers.render( loginForm.get().getFollowers().toString(),"Welcome " +  loginForm.get().getUsername())+"!");

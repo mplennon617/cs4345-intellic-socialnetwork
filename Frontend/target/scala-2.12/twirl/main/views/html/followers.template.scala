@@ -83,11 +83,13 @@ Seq[Any](format.raw/*1.38*/("""
                             <li class="collection-item avatar">
                                 <i class="material-icons circle blue">JD</i>
                                 <span class="title">Jane Doe</span>
+                                <button id="api-search-button" class="btn right" type="submit">Unfollow</button>
                                     <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
                             </li>
                             <li class="collection-item avatar">
                                 <i class="material-icons circle blue">JS</i>
                                 <span class="title">John Smith</span>
+                                <button id="api-search-button" class="btn right" type="submit">Unfollow</button>
                                     <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
                             </li>
                         </ul>
@@ -96,7 +98,7 @@ Seq[Any](format.raw/*1.38*/("""
                     <!-- View -- Find Followers -->
                     <div class="card-panel" id="find-follower">
                         <h4 class="focused blue-text text-darken-2">Find Followers</h4>
-                        <p>"""),_display_(/*67.29*/followers),format.raw/*67.38*/("""</p>
+                        <p>"""),_display_(/*69.29*/followers),format.raw/*69.38*/("""</p>
                         <ul class="collection">
                             <li class="collection-item avatar">
                                 <i class="material-icons circle blue">ML</i>
@@ -132,10 +134,10 @@ Seq[Any](format.raw/*1.38*/("""
         <!-- Tabs Script -- Inline for now -->
         <script>
             var tabs = document.querySelectorAll('.tabs')
-            for (var i = 0; i < tabs.length; i++)"""),format.raw/*103.50*/("""{"""),format.raw/*103.51*/("""
-                """),format.raw/*104.17*/("""M.Tabs.init(tabs[i]);
-            """),format.raw/*105.13*/("""}"""),format.raw/*105.14*/("""
-        """),format.raw/*106.9*/("""</script>
+            for (var i = 0; i < tabs.length; i++)"""),format.raw/*105.50*/("""{"""),format.raw/*105.51*/("""
+                """),format.raw/*106.17*/("""M.Tabs.init(tabs[i]);
+            """),format.raw/*107.13*/("""}"""),format.raw/*107.14*/("""
+        """),format.raw/*108.9*/("""</script>
 
     </body>
 </html>
@@ -155,11 +157,11 @@ Seq[Any](format.raw/*1.38*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2022-04-28T22:48:09.975
+                  DATE: 2022-04-30T13:53:42.999
                   SOURCE: C:/Users/Michael/code/classes/CS4345-SWEPrinciples/cs4345-intellic-socialnetwork/Frontend/app/views/followers.scala.html
-                  HASH: c0ffed45c8ec48b6ab249dd3d9112d3bab81e3c2
-                  MATRIX: 959->1|1090->37|1118->39|2886->1782|2914->1789|3685->2533|3715->2542|4835->3635|4865->3644|7188->5938|7218->5939|7265->5957|7329->5992|7359->5993|7397->6003
-                  LINES: 28->1|33->1|34->2|65->33|65->33|81->49|81->49|99->67|99->67|135->103|135->103|136->104|137->105|137->105|138->106
+                  HASH: b22f818bd2777583029f22367cf1e109497ce567
+                  MATRIX: 959->1|1090->37|1118->39|2886->1782|2914->1789|3685->2533|3715->2542|5063->3863|5093->3872|7416->6166|7446->6167|7493->6185|7557->6220|7587->6221|7625->6231
+                  LINES: 28->1|33->1|34->2|65->33|65->33|81->49|81->49|101->69|101->69|137->105|137->105|138->106|139->107|139->107|140->108
                   -- GENERATED --
               */
           

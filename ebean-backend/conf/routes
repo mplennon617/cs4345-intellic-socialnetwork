@@ -17,7 +17,10 @@ POST    /login                      controllers.UserController.authenticate()
 
 
 # Add User  {"username":name, "password":password}
-POST    /signup                      controllers.UserController.registerNew()
+POST    /signup                     controllers.UserController.registerNew()
+
+# Remove Follower {"id":id, "follower_id":follower_id}
+DELETE  /followers                     controllers.UserController.removeFollower()
 
 
 

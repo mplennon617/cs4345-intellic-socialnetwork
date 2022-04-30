@@ -3,16 +3,20 @@
 
 # --- !Ups
 
-create table follower (
-  follower_id                   bigint,
-  user_id                       bigint
+create table user (
+    id bigint auto_increment not null,
+    username varchar(255),
+    password varchar(255),
+    uuid bigint,
+    constraint pk_user primary key (id),
+    constraint user_id unique (uuid)
 );
 
-create table user (
-  id                            bigint auto_increment not null,
-  username                      varchar(255),
-  password                      varchar(255),
-  constraint pk_user primary key (id)
+create table follower (
+    follower_id bigint,
+    user_id bigint,
+    foreign key (follower_id) references user(uuid),
+    foreign key (user_id) references user(uuid)
 );
 
 

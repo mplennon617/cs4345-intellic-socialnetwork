@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bb6d3a2-2690-444f-96ef-ed03735f3acf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/app/views/followers.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/followers.scala.html" afterDir="false" />
-    </list>
+    <list default="true" id="9bb6d3a2-2690-444f-96ef-ed03735f3acf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

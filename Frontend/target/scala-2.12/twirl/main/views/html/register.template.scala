@@ -75,18 +75,25 @@ Seq[Any](format.raw/*1.28*/("""
                         <div class="row">
                             <div class="input-field col s12">
 
+                                <input id="uuid" name="uuid" type="text" class="validate">
+                                <label for="uuid">Unique ID</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
                                 <input id="password" name="password" type="password" class="validate">
                                 <label for="password">Password</label>
                             </div>
                         </div>
-                        """),_display_(/*50.26*/if(authorizeMessage!= null)/*50.53*/{_display_(Seq[Any](format.raw/*50.54*/("""
-                            """),format.raw/*51.29*/("""<div class="alert alert-primary" role="alert">
-                            """),_display_(/*52.30*/authorizeMessage),format.raw/*52.46*/("""
-                            """),format.raw/*53.29*/("""</div>
+                        """),_display_(/*57.26*/if(authorizeMessage!= null)/*57.53*/{_display_(Seq[Any](format.raw/*57.54*/("""
+                            """),format.raw/*58.29*/("""<div class="alert alert-primary" role="alert">
+                            """),_display_(/*59.30*/authorizeMessage),format.raw/*59.46*/("""
+                            """),format.raw/*60.29*/("""</div>
                             <br>
-                        """)))}),format.raw/*55.26*/("""
+                        """)))}),format.raw/*62.26*/("""
 
-                        """),format.raw/*57.25*/("""<div class="row">
+                        """),format.raw/*64.25*/("""<div class="row">
                             <button id="api-search-button" class="btn col s4 offset-s4" type="submit">Submit</button>
                         </div>
 
@@ -112,19 +119,11 @@ Seq[Any](format.raw/*1.28*/("""
 
               /*
                   -- GENERATED --
-<<<<<<< HEAD
-                  DATE: 2022-04-01T23:40:50.203
-                  SOURCE: C:/Users/Michael/code/classes/CS4345-SWEPrinciples/Lab-2-Ebean/Frontend/app/views/register.scala.html
-                  HASH: 21084405952337d1dab47a06d6b9e9c7674f3466
-                  MATRIX: 951->1|1071->28|2659->1591|2674->1597|2726->1628|3481->2356|3517->2383|3556->2384|3613->2413|3716->2489|3753->2505|3810->2534|3906->2599|3960->2625
-                  LINES: 28->1|33->2|62->31|62->31|62->31|78->47|78->47|78->47|79->48|80->49|80->49|81->50|83->52|85->54
-=======
-                  DATE: 2022-04-28T20:28:16.610
+                  DATE: 2022-04-30T14:31:34.828
                   SOURCE: C:/Users/Michael/code/classes/CS4345-SWEPrinciples/cs4345-intellic-socialnetwork/Frontend/app/views/register.scala.html
-                  HASH: f4bbb2a6c32df9467dd7ba3310d3a4c4597a38f1
-                  MATRIX: 951->1|1072->27|1100->29|2997->1901|3012->1907|3064->1938|3835->2682|3871->2709|3910->2710|3968->2740|4072->2817|4109->2833|4167->2863|4265->2930|4321->2958
-                  LINES: 28->1|33->1|34->2|66->34|66->34|66->34|82->50|82->50|82->50|83->51|84->52|84->52|85->53|87->55|89->57
->>>>>>> yash
+                  HASH: e19a72f80aa6bfbbc2695e6bf25e4301d83f8c2e
+                  MATRIX: 951->1|1072->27|1100->29|2997->1901|3012->1907|3064->1938|4172->3019|4208->3046|4247->3047|4305->3077|4409->3154|4446->3170|4504->3200|4602->3267|4658->3295
+                  LINES: 28->1|33->1|34->2|66->34|66->34|66->34|89->57|89->57|89->57|90->58|91->59|91->59|92->60|94->62|96->64
                   -- GENERATED --
               */
           

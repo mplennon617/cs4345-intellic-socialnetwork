@@ -75,20 +75,27 @@ Seq[Any](format.raw/*1.28*/("""
                         <div class="row">
                             <div class="input-field col s12">
 
+                                <input id="uuid" name="uuid" type="text" class="validate">
+                                <label for="uuid">Unique ID</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+
                                 <input id="password" name="password" type="password" class="validate">
                                 <label for="password">Password</label>
                             </div>
                         </div>
-                        """),_display_(/*50.26*/if(authorizeMessage!= null)/*50.53*/{_display_(Seq[Any](format.raw/*50.54*/("""
-                            """),format.raw/*51.29*/("""<div class="alert alert-primary" role="alert">
-                            """),_display_(/*52.30*/authorizeMessage),format.raw/*52.46*/("""
-                            """),format.raw/*53.29*/("""</div>
+                        """),_display_(/*57.26*/if(authorizeMessage!= null)/*57.53*/{_display_(Seq[Any](format.raw/*57.54*/("""
+                            """),format.raw/*58.29*/("""<div class="alert alert-primary" role="alert">
+                            """),_display_(/*59.30*/authorizeMessage),format.raw/*59.46*/("""
+                            """),format.raw/*60.29*/("""</div>
                             <br>
-                        """)))}),format.raw/*55.26*/("""
-                        """),format.raw/*56.25*/("""<div class="row">
+                        """)))}),format.raw/*62.26*/("""
+                        """),format.raw/*63.25*/("""<div class="row">
                             <button id="api-search-button" class="btn col s4 offset-s4" type="submit">Submit</button>
                         </div>
-                        <a href=""""),_display_(/*59.35*/routes/*59.41*/.HomeController.signup()),format.raw/*59.65*/("""">Don't have an account?</a>
+                        <a href=""""),_display_(/*66.35*/routes/*66.41*/.HomeController.signup()),format.raw/*66.65*/("""">Don't have an account?</a>
                     </form>
                 </div>
             </div>
@@ -111,19 +118,11 @@ Seq[Any](format.raw/*1.28*/("""
 
               /*
                   -- GENERATED --
-<<<<<<< HEAD
-                  DATE: 2022-04-01T23:40:50.194
-                  SOURCE: C:/Users/Michael/code/classes/CS4345-SWEPrinciples/Lab-2-Ebean/Frontend/app/views/login.scala.html
-                  HASH: 35dca9e6949486fa9ac000f0cb94ff87b88db485
-                  MATRIX: 948->1|1068->28|2656->1591|2671->1597|2722->1627|3477->2355|3513->2382|3552->2383|3609->2412|3712->2488|3749->2504|3806->2533|3902->2598|3955->2623|4183->2824|4198->2830|4243->2854
-                  LINES: 28->1|33->2|62->31|62->31|62->31|78->47|78->47|78->47|79->48|80->49|80->49|81->50|83->52|84->53|87->56|87->56|87->56
-=======
-                  DATE: 2022-04-28T20:28:16.607
+                  DATE: 2022-04-30T14:28:00.760
                   SOURCE: C:/Users/Michael/code/classes/CS4345-SWEPrinciples/cs4345-intellic-socialnetwork/Frontend/app/views/login.scala.html
-                  HASH: 6312671be8546b1d4d7051c629b49f204dc28179
-                  MATRIX: 948->1|1069->27|1097->29|2991->1898|3006->1904|3057->1934|3828->2678|3864->2705|3903->2706|3961->2736|4065->2813|4102->2829|4160->2859|4258->2926|4312->2952|4543->3156|4558->3162|4603->3186
-                  LINES: 28->1|33->1|34->2|66->34|66->34|66->34|82->50|82->50|82->50|83->51|84->52|84->52|85->53|87->55|88->56|91->59|91->59|91->59
->>>>>>> yash
+                  HASH: c2ea680b25a963d4b8033567645a15f6c9d97c35
+                  MATRIX: 948->1|1069->27|1097->29|2991->1898|3006->1904|3057->1934|4165->3015|4201->3042|4240->3043|4298->3073|4402->3150|4439->3166|4497->3196|4595->3263|4649->3289|4880->3493|4895->3499|4940->3523
+                  LINES: 28->1|33->1|34->2|66->34|66->34|66->34|89->57|89->57|89->57|90->58|91->59|91->59|92->60|94->62|95->63|98->66|98->66|98->66
                   -- GENERATED --
               */
           

@@ -16,6 +16,8 @@ public class User {
 
     private String password;
 
+    private String uuid;
+
     private List<Long> followers;
 
     public String getUsername() {
@@ -31,6 +33,12 @@ public class User {
     }
 
     public void setPassword(String password) { this.password = password; }
+
+    public String getUniqueID() {
+        return uuid;
+    }
+
+    public void setUniqueID(String uuid) { this.uuid = uuid; }
 
     public List<Long> getFollowers() { return followers; }
 

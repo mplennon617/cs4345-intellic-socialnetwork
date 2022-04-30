@@ -123,4 +123,46 @@ public class UserController extends Controller {
         }
     }
 
+
+
+    /**
+     * Given a user ID and follower ID, remove follower from user's follower list.
+     * DELETE
+     * @return success if valid, fail if already taken
+     */
+    public Result removeFollower() {
+        System.out.println("Remove follower");
+
+        long user = Long.parseLong(request().getQueryString("id"));
+        long follower = Long.parseLong(request().getQueryString("follower_id"));
+
+        try {
+            Follower.removeFollower(user,follower);
+            return ok("true");
+        }
+        catch (Exception e) {
+            return ok("false");
+        }
+    }
+
 }
+
+
+    public Result getFollowers() {
+        System.out.println("Follower List");
+        long id = Long.parseLong(request().getQueryString("userID"));
+
+        ObjectNode result = null;
+
+        List<Follower> list = Follower.getFollowers(id);
+        if (list != null) {
+            result = Json.newObject();
+            int i = 1;
+            for (Follower l : list){
+                User temp = User.findByID(l.followerID);
+                result.put(("user"+i), temp.username);
+                i++;
+            }
+        }
+        return ok(result);
+    }

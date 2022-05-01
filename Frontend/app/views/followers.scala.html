@@ -48,6 +48,8 @@
                         <h4 class="focused blue-text text-darken-2">Followers</h4>
                         <p>@followers</p>
                         <ul class="collection">
+                            @for (String s: @routes.FollowerController.getFollowers()) {
+                            }
                             <li class="collection-item avatar">
                                 <i class="material-icons circle blue">JD</i>
                                 <span class="title">Jane Doe</span>

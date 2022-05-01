@@ -6,9 +6,9 @@ import play.mvc.Controller;
 import play.mvc.Result;
 import play.libs.concurrent.HttpExecutionContext;
 import play.libs.ws.WSResponse;
-import views.html.*;
 
 import javax.inject.Inject;
+import java.util.List;
 import java.util.concurrent.CompletionStage;
 
 /**
@@ -31,6 +31,13 @@ public class FollowerController extends Controller {
      */
     public Result viewFollowers() {
         return ok(views.html.followers.render(null,""));
+    }
+
+    public List<Long> getFollowers() {
+        User u = new User();
+        u.setUniqueID(session("uuid"));
+
+        return u.getFollowers();
     }
 
     /**
@@ -60,6 +67,22 @@ public class FollowerController extends Controller {
                 }
             }, ec.current());
 
+    }
+
+    /**
+     *
+     * @param username - the full username to extract intials from.
+     * @return The first two charcters of username in all caps.
+     */
+    public String getInitials(String username) {
+        if (username.indexOf(' ') > -1) {
+            String initials = ("" + username.charAt(0) + username.charAt(username.indexOf(' ') + 1)).toUpperCase();
+            return initials;
+        }
+        if (username.length() >= 2) {
+            return username.substring(0,2).toUpperCase();
+        }
+        return "";
     }
 
     /**

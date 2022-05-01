@@ -12,6 +12,7 @@ create table user (
   id                            bigint auto_increment not null,
   username                      varchar(255),
   password                      varchar(255),
+  uuid                          bigint,
   constraint pk_user primary key (id)
 );
 

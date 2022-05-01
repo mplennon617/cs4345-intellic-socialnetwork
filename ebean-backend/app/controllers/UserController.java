@@ -8,6 +8,7 @@ import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -122,5 +123,93 @@ public class UserController extends Controller {
             return ok("false");
         }
     }
+
+    /**
+     * Return list of Users
+     * Get
+     * @return success if valid, fail if already taken
+     */
+    public Result getNewFollowerList() {
+        System.out.println("Follower List");
+        long id = Long.parseLong(request().getQueryString("userID"));
+
+        ObjectNode result = null;
+
+        List<Follower> followerList = Follower.getFollowers(id);
+        List<User> userList = User.getUsers();
+
+        List<String> usernameList = new ArrayList<String>();
+        for (User u : userList)
+            for (Follower f: followerList)
+                if (u.uuid != f.userID && u.id != id)
+                    usernameList.add(u.username);
+
+
+        if (usernameList != null) {
+            result = Json.newObject();
+            int i = 1;
+            for (String s : usernameList){
+                result.put(("user"+i), s);
+                i++;
+            }
+        }
+        return ok(result);
+    }
+
+
+    /**
+     * Return list of Followers give user ID
+     * POST
+     * @return success if valid, fail if already taken
+     */
+    public Result addFollower() {
+        System.out.println("Add Follower");
+
+        long userid = Long.parseLong(request().getQueryString("userID"));
+
+        String followerIDString = request().getQueryString("followerID");
+        long followerid = 0;
+        if (followerIDString != null) {
+            followerid = Long.parseLong(followerIDString);
+        }
+
+        ObjectNode result = null;
+
+        if (followerid != 0) {
+            result = Json.newObject();
+            int i = 1;
+            Follower follower = new Follower();
+            follower.followerID = followerid;
+            follower.userID = userid;
+            follower.save(); // CREATE A BEAN TO PLACE INTO DATABASE
+            result.put(("followerid"), followerid);
+        }
+        return ok(result);
+    }
+
+
+        /**
+         * Return list of Followers give user ID
+         * POST
+         * @return success if valid, fail if already taken
+         */
+        public Result removeFollower() {
+            // System.out.println("Follower List");
+            // long id = Long.parseLong(request().getQueryString("userID"));
+            //
+            ObjectNode result = null;
+            //
+            // List<Follower> list = Follower.getFollowers(id);
+            // if (list != null) {
+            //     result = Json.newObject();
+            //     int i = 1;
+            //     for (Follower l : list){
+            //         User temp = User.findByID(l.followerID);
+            //         result.put(("user"+i), temp.username);
+            //         i++;
+            //     }
+            // }
+            return ok(result);
+        }
 
 }

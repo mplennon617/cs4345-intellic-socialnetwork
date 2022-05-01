@@ -123,4 +123,87 @@ public class UserController extends Controller {
         }
     }
 
+    /**
+     * Return list of Users
+     * Get
+     * @return success if valid, fail if already taken
+     */
+    public Result getNewFollowerList() {
+        System.out.println("Follower List");
+        long id = Long.parseLong(request().getQueryString("userID"));
+
+        ObjectNode result = null;
+
+        List<Follower> followerList = Follower.getFollowers(id);
+        List<User> userList = User.getUsers();
+
+        List<String> usernameList;
+        for (User u : userList)
+            for (Follower f: followerList)
+                if (u.uuid != f.userID and u.id != id)
+                    usernameList.add(u.username);
+
+
+        if (list != null) {
+            result = Json.newObject();
+            int i = 1;
+            for (String s : usernameList){
+                result.put(("user"+i), s);
+                i++;
+            }
+        }
+        return ok(result);
+    }
+
+
+    /**
+     * Return list of Followers give user ID
+     * POST
+     * @return success if valid, fail if already taken
+     */
+    public Result addFollower() {
+        System.out.println("Add Follower");
+
+        long userid = Long.parseLong(request().getQueryString("userID"));
+        long followerid = Long.parseLong(request().getQueryString("followerID"));
+
+        ObjectNode result = null;
+
+        if (list != null) {
+            result = Json.newObject();
+            int i = 1;
+            Follower follower = new Follower();
+            follower.followerID;
+            follower.userID;
+            follower.save(); // CREATE A BEAN TO PLACE INTO DATABASE
+            result.put(("followerid"), );
+        }
+        return ok(result);
+    }
+
+
+        /**
+         * Return list of Followers give user ID
+         * POST
+         * @return success if valid, fail if already taken
+         */
+        public Result removeFollower() {
+            // System.out.println("Follower List");
+            // long id = Long.parseLong(request().getQueryString("userID"));
+            //
+            // ObjectNode result = null;
+            //
+            // List<Follower> list = Follower.getFollowers(id);
+            // if (list != null) {
+            //     result = Json.newObject();
+            //     int i = 1;
+            //     for (Follower l : list){
+            //         User temp = User.findByID(l.followerID);
+            //         result.put(("user"+i), temp.username);
+            //         i++;
+            //     }
+            // }
+            // return ok(result);
+        }
+
 }

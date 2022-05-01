@@ -21,6 +21,9 @@ public class User extends Model {
     @Constraints.Required
     public String password;
 
+    @Constraints.Required
+    public long uuid;
+
     public static Find<Long, User> find = new Find<Long, User>(){};
 
     public static User findByID(long name) {
@@ -35,5 +38,10 @@ public class User extends Model {
                 .where()
                 .eq("username", name)
                 .findUnique();
+    }
+
+    public static List<User> getUsers() {
+      // TODO Check if it works
+          return User.findList();
     }
 }

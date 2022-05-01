@@ -17,7 +17,16 @@ POST    /login                      controllers.UserController.authenticate()
 
 
 # Add User  {"username":name, "password":password}
-POST    /signup                      controllers.UserController.registerNew()
+POST    /signup                     controllers.UserController.registerNew()
 
 
 
+
+# View unfollowed list {"userid":userid }
+GET     /unfollowed                     controllers.UserController.getNewFollowerList()
+
+# Add Follower (take in id of current user and id of follower to delete ) {"userid":id, "uuid:uuid"}
+POST    /followers                     controllers.UserController.addFollower()
+
+# Delete Follower {"userid":userid }
+DELETE  /followers                   controllers.UserController.removeFollower()

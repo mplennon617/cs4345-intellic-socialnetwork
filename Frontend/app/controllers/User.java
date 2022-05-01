@@ -54,15 +54,8 @@ public class User {
     public CompletionStage<WSResponse> gatherFollowers() {
 
         WSClient ws = play.test.WSTestClient.newClient(9005);
-        //get followers data
-        WSRequest request = ws.url("http://localhost:9005/followers");
-        ObjectNode res = Json.newObject();
 
-        int i = 1;
-        for (Long currId : this.followers) {
-            res.put("follower-"+i, currId);
-            i++;
-        }
+        WSRequest request = ws.url("http://localhost:9005/followers/"+this.uuid);
 
         return request.addHeader("Content-Type", "application/json")
                 .get()

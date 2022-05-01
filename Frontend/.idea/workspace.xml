@@ -6,12 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="9bb6d3a2-2690-444f-96ef-ed03735f3acf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/app/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/app/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/app/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/app/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/app/models/Follower.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/app/models/Follower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/app/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/app/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/app/views/index.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/app/views/index.scala.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/conf/routes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/FollowerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/FollowerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/followers.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/followers.scala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/FollowerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/FollowerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/followers$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/followers$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/followers.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/followers.template.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ebean-backend/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/logs/application.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,6 +139,11 @@
           <properties class="java.io.IOException" package="java.io" />
           <option name="timeStamp" value="12" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/controllers/HomeController.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

@@ -80,7 +80,9 @@ Seq[Any](format.raw/*1.38*/("""
                         <h4 class="focused blue-text text-darken-2">Followers</h4>
                         <p>"""),_display_(/*49.29*/followers),format.raw/*49.38*/("""</p>
                         <ul class="collection">
-                            <li class="collection-item avatar">
+"""),format.raw/*51.93*/("""
+"""),format.raw/*52.34*/("""
+                            """),format.raw/*53.29*/("""<li class="collection-item avatar">
                                 <i class="material-icons circle blue">JD</i>
                                 <span class="title">Jane Doe</span>
                                 <button id="api-search-button" class="btn right" type="submit">Unfollow</button>
@@ -98,12 +100,16 @@ Seq[Any](format.raw/*1.38*/("""
                     <!-- View -- Find Followers -->
                     <div class="card-panel" id="find-follower">
                         <h4 class="focused blue-text text-darken-2">Find Followers</h4>
-                        <p>"""),_display_(/*69.29*/followers),format.raw/*69.38*/("""</p>
+                        <p>"""),_display_(/*71.29*/followers),format.raw/*71.38*/("""</p>
                         <ul class="collection">
                             <li class="collection-item avatar">
                                 <i class="material-icons circle blue">ML</i>
                                 <span class="title">Michael Lennon</span>
-                                <button id="api-search-button" class="btn right" type="submit">Follow</button>
+                                <button id="api-search-button" class="btn right" type="submit">
+                                    <a class="white-text" href=""""),_display_(/*77.66*/routes/*77.72*/.FollowerController.getFollowers()),format.raw/*77.106*/("""">
+                                        Get Followers
+                                    </a>
+                                </button>
                                     <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
                             </li>
                             <li class="collection-item avatar">
@@ -134,10 +140,10 @@ Seq[Any](format.raw/*1.38*/("""
         <!-- Tabs Script -- Inline for now -->
         <script>
             var tabs = document.querySelectorAll('.tabs')
-            for (var i = 0; i < tabs.length; i++)"""),format.raw/*105.50*/("""{"""),format.raw/*105.51*/("""
-                """),format.raw/*106.17*/("""M.Tabs.init(tabs[i]);
-            """),format.raw/*107.13*/("""}"""),format.raw/*107.14*/("""
-        """),format.raw/*108.9*/("""</script>
+            for (var i = 0; i < tabs.length; i++)"""),format.raw/*111.50*/("""{"""),format.raw/*111.51*/("""
+                """),format.raw/*112.17*/("""M.Tabs.init(tabs[i]);
+            """),format.raw/*113.13*/("""}"""),format.raw/*113.14*/("""
+        """),format.raw/*114.9*/("""</script>
 
     </body>
 </html>
@@ -157,11 +163,11 @@ Seq[Any](format.raw/*1.38*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2022-04-30T13:53:42.999
+                  DATE: 2022-05-01T18:52:14.581
                   SOURCE: C:/Users/Michael/code/classes/CS4345-SWEPrinciples/cs4345-intellic-socialnetwork/Frontend/app/views/followers.scala.html
-                  HASH: b22f818bd2777583029f22367cf1e109497ce567
-                  MATRIX: 959->1|1090->37|1118->39|2886->1782|2914->1789|3685->2533|3715->2542|5063->3863|5093->3872|7416->6166|7446->6167|7493->6185|7557->6220|7587->6221|7625->6231
-                  LINES: 28->1|33->1|34->2|65->33|65->33|81->49|81->49|101->69|101->69|137->105|137->105|138->106|139->107|139->107|140->108
+                  HASH: 33db44d9986a199332b5fe1a9bab78d59e0d1a4b
+                  MATRIX: 959->1|1090->37|1118->39|2886->1782|2914->1789|3685->2533|3715->2542|3798->2689|3828->2724|3886->2754|5151->3992|5181->4001|5643->4436|5658->4442|5714->4476|7796->6529|7826->6530|7873->6548|7937->6583|7967->6584|8005->6594
+                  LINES: 28->1|33->1|34->2|65->33|65->33|81->49|81->49|83->51|84->52|85->53|103->71|103->71|109->77|109->77|109->77|143->111|143->111|144->112|145->113|145->113|146->114
                   -- GENERATED --
               */
           

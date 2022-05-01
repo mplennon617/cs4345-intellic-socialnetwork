@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Michael/code/classes/CS4345-SWEPrinciples/cs4345-intellic-socialnetwork/Frontend/conf/routes
-// @DATE:Thu Apr 28 22:48:09 CDT 2022
+// @DATE:Sun May 01 18:52:14 CDT 2022
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -89,22 +89,22 @@ package controllers.javascript {
     }
 
   
-    // @LINE:16
-    def followerHandler: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.FollowerController.followerHandler",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "followers/get"})
-        }
-      """
-    )
-  
     // @LINE:8
     def viewFollowers: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.FollowerController.viewFollowers",
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "followers"})
+        }
+      """
+    )
+  
+    // @LINE:16
+    def getFollowers: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.FollowerController.getFollowers",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "followers/get"})
         }
       """
     )

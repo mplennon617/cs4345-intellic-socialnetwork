@@ -26,6 +26,8 @@ public class FollowerController extends Controller {
         this.formFactory = formFactory;
     }
 
+    private List<String> followers;
+
     /**
      * Followers Page
      */
@@ -33,11 +35,32 @@ public class FollowerController extends Controller {
         return ok(views.html.followers.render(null,""));
     }
 
-    public List<Long> getFollowers() {
+    public CompletionStage<Result> getFollowers() {
         User u = new User();
         u.setUniqueID(session("uuid"));
 
-        return u.getFollowers();
+        return u.gatherFollowers()
+                .thenApplyAsync((WSResponse r) -> {
+                    if (r.getStatus() == 200 && r.asJson() != null && r.asJson().asBoolean()) {
+
+                        // TODO ----- TODO ----- TODO ----- TODO ----- TODO ----- TODO ----- TODO ----- TODO
+                        // At this point, we should have a JSON body containing all the uuids for each user.
+                        // We will have to create a List<String> containing all the usernames of these followers.
+                        // TODO ----- TODO ----- TODO ----- TODO ----- TODO ----- TODO ----- TODO ----- TODO
+
+                        // This will likely be done via a User.getUsernameFromUUID() method.
+
+                        // Then we should call u.setFollowers().
+
+                        System.out.println(r.asJson());
+                        // redirect to followers page, to display all categories
+                        return ok(views.html.followers.render(u.getFollowers().toString(), "Welcome " +  session("username")+"!"));
+                    } else {
+                        System.out.println("response null");
+                        String message = "An Error Occurred";
+                        return badRequest(views.html.followers.render(null, message));
+                    }
+                }, ec.current());
     }
 
     /**

@@ -67,16 +67,16 @@ Seq[Any](format.raw/*1.19*/("""
                 <p class="focused" style="font-size: 20px;
                     color: #3F51B5">"""),_display_(/*36.38*/message),format.raw/*36.45*/("""</p>
 
-                """),_display_(/*38.18*/if(message.contains("Welcome"))/*38.49*/{_display_(Seq[Any](format.raw/*38.50*/("""
-                    """),format.raw/*39.21*/("""<div class="row">
-                        <button id="api-search-button" class="btn col s4 offset-s4" type="submit">
-                            <a class="white-text" href=""""),_display_(/*41.58*/routes/*41.64*/.FollowerController.followerHandler()),format.raw/*41.101*/("""">
-                                VIEW FOLLOWERS
-                            </a>
-                        </button>
-                    </div>
-                    <br>
-                    """)))}),format.raw/*47.22*/("""
+"""),format.raw/*38.54*/("""
+"""),format.raw/*39.42*/("""
+"""),format.raw/*40.103*/("""
+"""),format.raw/*41.107*/("""
+"""),format.raw/*42.51*/("""
+"""),format.raw/*43.37*/("""
+"""),format.raw/*44.38*/("""
+"""),format.raw/*45.31*/("""
+"""),format.raw/*46.29*/("""
+"""),format.raw/*47.26*/("""
             """),format.raw/*48.13*/("""</header>
 
         </body>
@@ -97,11 +97,11 @@ Seq[Any](format.raw/*1.19*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2022-04-28T22:48:09.992
+                  DATE: 2022-05-01T18:52:35.374
                   SOURCE: C:/Users/Michael/code/classes/CS4345-SWEPrinciples/cs4345-intellic-socialnetwork/Frontend/app/views/index.scala.html
-                  HASH: 3beb0ee0ae53f143ae283b1e38502a249e8da318
-                  MATRIX: 948->1|1038->25|1105->18|1137->64|3197->2099|3225->2106|3277->2131|3317->2162|3356->2163|3406->2185|3609->2361|3624->2367|3683->2404|3910->2600|3952->2614
-                  LINES: 28->1|31->2|34->1|35->3|68->36|68->36|70->38|70->38|70->38|71->39|73->41|73->41|73->41|79->47|80->48
+                  HASH: eaf6abd10bfaada70b4c4caaa8f8224023bc20ca
+                  MATRIX: 948->1|1038->25|1105->18|1137->64|3197->2099|3225->2106|3261->2167|3291->2210|3322->2314|3353->2422|3383->2474|3413->2512|3443->2551|3473->2583|3503->2613|3533->2640|3575->2654
+                  LINES: 28->1|31->2|34->1|35->3|68->36|68->36|70->38|71->39|72->40|73->41|74->42|75->43|76->44|77->45|78->46|79->47|80->48
                   -- GENERATED --
               */
           

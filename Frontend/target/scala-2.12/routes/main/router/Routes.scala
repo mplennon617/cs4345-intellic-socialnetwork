@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Michael/code/classes/CS4345-SWEPrinciples/cs4345-intellic-socialnetwork/Frontend/conf/routes
-// @DATE:Thu Apr 28 22:48:09 CDT 2022
+// @DATE:Sun May 01 18:52:14 CDT 2022
 
 package router
 
@@ -49,7 +49,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.HomeController.loginHandler()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signup""", """controllers.HomeController.signup()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """register""", """controllers.HomeController.signupHandler()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """followers/get""", """controllers.FollowerController.followerHandler()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """followers/get""", """controllers.FollowerController.getFollowers()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.at(path:String = "/public", file:String)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -149,15 +149,15 @@ class Routes(
   )
 
   // @LINE:16
-  private[this] lazy val controllers_FollowerController_followerHandler5_route = Route("GET",
+  private[this] lazy val controllers_FollowerController_getFollowers5_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("followers/get")))
   )
-  private[this] lazy val controllers_FollowerController_followerHandler5_invoker = createInvoker(
-    FollowerController_1.followerHandler(),
+  private[this] lazy val controllers_FollowerController_getFollowers5_invoker = createInvoker(
+    FollowerController_1.getFollowers(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.FollowerController",
-      "followerHandler",
+      "getFollowers",
       Nil,
       "GET",
       this.prefix + """followers/get""",
@@ -218,9 +218,9 @@ class Routes(
       }
   
     // @LINE:16
-    case controllers_FollowerController_followerHandler5_route(params@_) =>
+    case controllers_FollowerController_getFollowers5_route(params@_) =>
       call { 
-        controllers_FollowerController_followerHandler5_invoker.call(FollowerController_1.followerHandler())
+        controllers_FollowerController_getFollowers5_invoker.call(FollowerController_1.getFollowers())
       }
   
     // @LINE:19

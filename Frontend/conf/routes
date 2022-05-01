@@ -13,7 +13,7 @@ GET     /signup                     controllers.HomeController.signup()
 GET     /register                   controllers.HomeController.signupHandler()
 
 # FIXME: CHANGE TO GETIDFROMUSERNAME WHEN WE GET IT WORKING ON THE BACKEND
-GET     /followers/get              controllers.FollowerController.followerHandler()
+GET     /followers/get              controllers.FollowerController.getFollowers()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

@@ -64,3 +64,13 @@ play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evoluti
 2022-05-01 18:14:01,522 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-9 - Database [default] connected at jdbc:mysql://localhost/ebeantest?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
 2022-05-01 18:14:01,537 [WARN] from com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager in ForkJoinPool-1-worker-9 - Bean [models.Follower] has no unique id set
 2022-05-01 18:14:01,590 [INFO] from play.api.Play in ForkJoinPool-1-worker-9 - Application started (Dev)
+2022-05-01 18:25:09,817 [INFO] from application in application-akka.actor.default-dispatcher-4 - Shutting down connection pool.
+2022-05-01 18:25:09,862 [INFO] from application in application-akka.actor.default-dispatcher-4 - Creating Pool for datasource 'default'
+2022-05-01 18:25:09,868 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-4 - Database [default] connected at jdbc:mysql://localhost/ebeantest?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2022-05-01 18:25:09,885 [WARN] from com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager in application-akka.actor.default-dispatcher-4 - Bean [models.Follower] has no unique id set
+2022-05-01 18:25:09,917 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-4 - Application started (Dev)
+2022-05-01 18:25:10,370 [INFO] from application in application-akka.actor.default-dispatcher-6 - Shutting down connection pool.
+2022-05-01 18:25:10,408 [INFO] from application in application-akka.actor.default-dispatcher-6 - Creating Pool for datasource 'default'
+2022-05-01 18:25:10,414 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-6 - Database [default] connected at jdbc:mysql://localhost/ebeantest?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2022-05-01 18:25:10,429 [WARN] from com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager in application-akka.actor.default-dispatcher-6 - Bean [models.Follower] has no unique id set
+2022-05-01 18:25:10,458 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-6 - Application started (Dev)

@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Michael/code/classes/CS4345-SWEPrinciples/cs4345-intellic-socialnetwork/Frontend/conf/routes
-// @DATE:Thu Apr 28 22:48:09 CDT 2022
+// @DATE:Sun May 01 18:52:14 CDT 2022
 
 import play.api.mvc.Call
 
@@ -66,16 +66,16 @@ package controllers {
     }
 
   
-    // @LINE:16
-    def followerHandler(): Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "followers/get")
-    }
-  
     // @LINE:8
     def viewFollowers(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "followers")
+    }
+  
+    // @LINE:16
+    def getFollowers(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "followers/get")
     }
   
   }

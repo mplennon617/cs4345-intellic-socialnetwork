@@ -32,6 +32,8 @@
 
                 <h4>@message</h4>
 
+                        <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
+
                 <!-- Tabs -- View/Find -->
                 <div class="col s12">
                     <ul class="tabs">
@@ -45,9 +47,18 @@
 
                     <!-- View -- View Followers -->
                     <div class="card-panel" id="view-follower">
-                        <h4 class="focused blue-text text-darken-2">Followers</h4>
+
+                        <button id="api-search-button" class="btn" type="submit">
+                            <a class="white-text" href="@routes.FollowerController.getFollowers()">
+                                Get Followers
+                            </a>
+                        </button>
+
+                        <h4 class="focused blue-text text-darken-2">Following</h4>
                         <p>@followers</p>
                         <ul class="collection">
+@*                            @for (String s: @routes.FollowerController.getFollowers()) {*@
+@*                            }*@
                             <li class="collection-item avatar">
                                 <i class="material-icons circle blue">JD</i>
                                 <span class="title">Jane Doe</span>
@@ -68,12 +79,6 @@
                         <h4 class="focused blue-text text-darken-2">Find Followers</h4>
                         <p>@followers</p>
                         <ul class="collection">
-                            <li class="collection-item avatar">
-                                <i class="material-icons circle blue">ML</i>
-                                <span class="title">Michael Lennon</span>
-                                <button id="api-search-button" class="btn right" type="submit">Follow</button>
-                                    <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
-                            </li>
                             <li class="collection-item avatar">
                                 <i class="material-icons circle blue">FW</i>
                                 <span class="title">Freddy Wang</span>

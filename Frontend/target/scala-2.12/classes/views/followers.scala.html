@@ -48,14 +48,18 @@
                         <h4 class="focused blue-text text-darken-2">Followers</h4>
                         <p>@followers</p>
                         <ul class="collection">
+@*                            @for (String s: @routes.FollowerController.getFollowers()) {*@
+@*                            }*@
                             <li class="collection-item avatar">
                                 <i class="material-icons circle blue">JD</i>
                                 <span class="title">Jane Doe</span>
+                                <button id="api-search-button" class="btn right" type="submit">Unfollow</button>
                                     <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
                             </li>
                             <li class="collection-item avatar">
                                 <i class="material-icons circle blue">JS</i>
                                 <span class="title">John Smith</span>
+                                <button id="api-search-button" class="btn right" type="submit">Unfollow</button>
                                     <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
                             </li>
                         </ul>
@@ -69,7 +73,11 @@
                             <li class="collection-item avatar">
                                 <i class="material-icons circle blue">ML</i>
                                 <span class="title">Michael Lennon</span>
-                                <button id="api-search-button" class="btn right" type="submit">Follow</button>
+                                <button id="api-search-button" class="btn right" type="submit">
+                                    <a class="white-text" href="@routes.FollowerController.getFollowers()">
+                                        Get Followers
+                                    </a>
+                                </button>
                                     <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
                             </li>
                             <li class="collection-item avatar">

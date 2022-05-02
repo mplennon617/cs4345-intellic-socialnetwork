@@ -64,6 +64,8 @@ Seq[Any](format.raw/*1.38*/("""
 
                 <h4>"""),_display_(/*33.22*/message),format.raw/*33.29*/("""</h4>
 
+                        <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
+
                 <!-- Tabs -- View/Find -->
                 <div class="col s12">
                     <ul class="tabs">
@@ -77,12 +79,19 @@ Seq[Any](format.raw/*1.38*/("""
 
                     <!-- View -- View Followers -->
                     <div class="card-panel" id="view-follower">
-                        <h4 class="focused blue-text text-darken-2">Followers</h4>
-                        <p>"""),_display_(/*49.29*/followers),format.raw/*49.38*/("""</p>
+
+                        <button id="api-search-button" class="btn" type="submit">
+                            <a class="white-text" href=""""),_display_(/*52.58*/routes/*52.64*/.FollowerController.getFollowers()),format.raw/*52.98*/("""">
+                                Get Followers
+                            </a>
+                        </button>
+
+                        <h4 class="focused blue-text text-darken-2">Following</h4>
+                        <p>"""),_display_(/*58.29*/followers),format.raw/*58.38*/("""</p>
                         <ul class="collection">
-"""),format.raw/*51.93*/("""
-"""),format.raw/*52.34*/("""
-                            """),format.raw/*53.29*/("""<li class="collection-item avatar">
+"""),format.raw/*60.93*/("""
+"""),format.raw/*61.34*/("""
+                            """),format.raw/*62.29*/("""<li class="collection-item avatar">
                                 <i class="material-icons circle blue">JD</i>
                                 <span class="title">Jane Doe</span>
                                 <button id="api-search-button" class="btn right" type="submit">Unfollow</button>
@@ -100,18 +109,8 @@ Seq[Any](format.raw/*1.38*/("""
                     <!-- View -- Find Followers -->
                     <div class="card-panel" id="find-follower">
                         <h4 class="focused blue-text text-darken-2">Find Followers</h4>
-                        <p>"""),_display_(/*71.29*/followers),format.raw/*71.38*/("""</p>
+                        <p>"""),_display_(/*80.29*/followers),format.raw/*80.38*/("""</p>
                         <ul class="collection">
-                            <li class="collection-item avatar">
-                                <i class="material-icons circle blue">ML</i>
-                                <span class="title">Michael Lennon</span>
-                                <button id="api-search-button" class="btn right" type="submit">
-                                    <a class="white-text" href=""""),_display_(/*77.66*/routes/*77.72*/.FollowerController.getFollowers()),format.raw/*77.106*/("""">
-                                        Get Followers
-                                    </a>
-                                </button>
-                                    <!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
-                            </li>
                             <li class="collection-item avatar">
                                 <i class="material-icons circle blue">FW</i>
                                 <span class="title">Freddy Wang</span>
@@ -140,10 +139,10 @@ Seq[Any](format.raw/*1.38*/("""
         <!-- Tabs Script -- Inline for now -->
         <script>
             var tabs = document.querySelectorAll('.tabs')
-            for (var i = 0; i < tabs.length; i++)"""),format.raw/*111.50*/("""{"""),format.raw/*111.51*/("""
-                """),format.raw/*112.17*/("""M.Tabs.init(tabs[i]);
-            """),format.raw/*113.13*/("""}"""),format.raw/*113.14*/("""
-        """),format.raw/*114.9*/("""</script>
+            for (var i = 0; i < tabs.length; i++)"""),format.raw/*110.50*/("""{"""),format.raw/*110.51*/("""
+                """),format.raw/*111.17*/("""M.Tabs.init(tabs[i]);
+            """),format.raw/*112.13*/("""}"""),format.raw/*112.14*/("""
+        """),format.raw/*113.9*/("""</script>
 
     </body>
 </html>
@@ -163,11 +162,11 @@ Seq[Any](format.raw/*1.38*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2022-05-01T18:52:14.581
+                  DATE: 2022-05-02T12:08:25.543
                   SOURCE: C:/Users/Michael/code/classes/CS4345-SWEPrinciples/cs4345-intellic-socialnetwork/Frontend/app/views/followers.scala.html
-                  HASH: 33db44d9986a199332b5fe1a9bab78d59e0d1a4b
-                  MATRIX: 959->1|1090->37|1118->39|2886->1782|2914->1789|3685->2533|3715->2542|3798->2689|3828->2724|3886->2754|5151->3992|5181->4001|5643->4436|5658->4442|5714->4476|7796->6529|7826->6530|7873->6548|7937->6583|7967->6584|8005->6594
-                  LINES: 28->1|33->1|34->2|65->33|65->33|81->49|81->49|83->51|84->52|85->53|103->71|103->71|109->77|109->77|109->77|143->111|143->111|144->112|145->113|145->113|146->114
+                  HASH: 894c71c8083ecac8bf4dcbde92b88e6b6580c37e
+                  MATRIX: 959->1|1090->37|1118->39|2886->1782|2914->1789|3828->2676|3843->2682|3898->2716|4159->2950|4189->2959|4272->3106|4302->3141|4360->3171|5625->4409|5655->4418|7490->6224|7520->6225|7567->6243|7631->6278|7661->6279|7699->6289
+                  LINES: 28->1|33->1|34->2|65->33|65->33|84->52|84->52|84->52|90->58|90->58|92->60|93->61|94->62|112->80|112->80|142->110|142->110|143->111|144->112|144->112|145->113
                   -- GENERATED --
               */
           

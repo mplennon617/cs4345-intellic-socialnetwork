@@ -82,15 +82,18 @@ public class UserController extends Controller {
     public Result getFollowers() {
         System.out.println("Follower List");
         long id = Long.parseLong(request().getQueryString("userID"));
+        System.out.println("id is: "+id);
 
         ObjectNode result = null;
 
         List<Follower> list = Follower.getFollowers(id);
-        if (list != null) {
+        System.out.println(list.toString());
+        if (list != null && list.size() > 0) {
             result = Json.newObject();
             int i = 1;
             for (Follower l : list){
-                User temp = User.findByID(l.followerID);
+                User temp = User.findByUniqueID(l.followerID);
+                System.out.println("USERNAME: "+temp.username);
                 result.put(("user"+i), temp.username);
                 i++;
             }

@@ -60,7 +60,7 @@ public class FollowerController extends Controller {
                         return ok(views.html.followers.render(u.getFollowers().toString(), "Welcome " +  session("username")+"!"));
                     } else {
                         System.out.println("response null");
-                        String message = "An Error Occurred";
+                        String message = "No followers!";
                         return badRequest(views.html.followers.render(null, message));
                     }
                 }, ec.current());

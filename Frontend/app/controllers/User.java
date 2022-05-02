@@ -55,9 +55,8 @@ public class User {
 
         WSClient ws = play.test.WSTestClient.newClient(9005);
 
+        System.out.println("User followers -- this.uuid is"+this.uuid);
         WSRequest request = ws.url("http://localhost:9005/followers?userID="+this.uuid);
-
-        System.out.println("Request in gatherFollowers: "+request.toString());
 
         return request.addHeader("Content-Type", "application/json")
                 .get()

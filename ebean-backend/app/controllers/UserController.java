@@ -26,17 +26,18 @@ public class UserController extends Controller {
         JsonNode req = request().body().asJson();
         String username = req.get("username").asText();
         String password = req.get("password").asText();
-        String uuid = req.get("uuid").asText();
+        long uuid = Long.parseLong(req.get("uuid").asText());
 
         try {
-            User user = User.findByName(username); // ( match where username and password both match )
-            if(user!=null && username.equals(user.username) && password.equals(user.password) && uuid.equals(user.uuid)){
+            User user = User.findByUniqueID(uuid); // ( match where username and password both match )
+            if(user!=null && username.equals(user.username) && password.equals(user.password) && uuid == user.uuid){
                 return ok("true");
             }else{
                 return ok("false");
             }
         }
         catch (Exception e) {
+            System.out.println("Authenticate: -- "+e.getMessage());
             return ok("false");
         }
 
@@ -56,7 +57,9 @@ public class UserController extends Controller {
         String password = req.get("password").asText();
         long uuid = Long.parseLong(req.get("uuid").asText());
 
-        User u = User.findByName(username);
+        System.out.println(username+"-"+password+"-"+uuid);
+
+        User u = User.findByUniqueID(uuid);
         ObjectNode result = null;
         if (u == null) {
             System.out.println("new user");

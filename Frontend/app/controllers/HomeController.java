@@ -55,10 +55,11 @@ public class HomeController extends Controller {
             return (CompletionStage<Result>) badRequest(views.html.login.render(""));  // send parameter like register so that user could know
         }
 
+        System.out.println("Login Handler");
+
         return loginForm.get().checkAuthorized()
             .thenApplyAsync((WSResponse r) -> {
-                if (r.getStatus() == 200 && r.asJson() != null && r.asJson().asBoolean() && loginForm.get().getUsername() != null) {
-
+                if (r.getStatus() == 200 && r.asJson() != null && r.asJson().asBoolean() && loginForm.get().getUsername() != null && loginForm.get().getUniqueID() != null) {
                     System.out.println(r.asJson());
                     // add username to session
                     session("username", loginForm.get().getUsername());   // store username in session for your project

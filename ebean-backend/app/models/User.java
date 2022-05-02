@@ -40,6 +40,13 @@ public class User extends Model {
                 .findUnique();
     }
 
+    public static User findByUniqueID(long uuid) {
+        return User.find
+                .where()
+                .eq("uuid", uuid)
+                .findUnique();
+    }
+
     public static List<User> getUsers() {
       // TODO Check if it works
           return User.find.all();

@@ -103,7 +103,7 @@ public class User {
         ObjectNode res = Json.newObject();
         res.put("username", this.username);
         res.put("password",this.password);
-        res.put("uuid",this.password);
+        res.put("uuid",this.uuid);
         return request.addHeader("Content-Type", "application/json")
                 .post(res)
                 .thenApply((WSResponse r) -> {

@@ -54,6 +54,7 @@ public class UserController extends Controller {
         JsonNode req = request().body().asJson();
         String username = req.get("username").asText();
         String password = req.get("password").asText();
+        long uuid = Long.parseLong(req.get("uuid").asText());
 
         User u = User.findByName(username);
         ObjectNode result = null;
@@ -63,6 +64,7 @@ public class UserController extends Controller {
             User user = new User();
             user.username=username;
             user.password=password;
+            user.uuid=uuid;
             user.save(); // CREATE A BEAN TO PLACE INTO DATABASE
             result.put("body", username);
         }

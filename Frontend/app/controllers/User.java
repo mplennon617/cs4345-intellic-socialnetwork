@@ -122,9 +122,11 @@ public class User {
         ObjectNode res = Json.newObject();
         res.put("username", this.username);
         res.put("password",this.password);
+        res.put("uuid",this.uuid);
 
         System.out.println(username);
         System.out.println(password);
+        System.out.println(uuid);
 
         WSRequest request = ws.url("http://localhost:9005/signup");
         return request.addHeader("Content-Type", "application/json")

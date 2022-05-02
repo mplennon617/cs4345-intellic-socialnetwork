@@ -16,7 +16,7 @@ We did not use any **external dependencies** or **packages** for this project ot
 
 ## Database
 
-The name of the database for this project is **team3**.
+The name of the database for this project is **ebeantest**.
 
 If you wish to set your own **port number**, **username** and **password**, you can make adjustments on line 14, 15 and 16 in `\cs4345-intellic-socialnetwork\ebean-backend\conf\application.conf`
 

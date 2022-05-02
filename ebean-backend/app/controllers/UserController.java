@@ -26,10 +26,11 @@ public class UserController extends Controller {
         JsonNode req = request().body().asJson();
         String username = req.get("username").asText();
         String password = req.get("password").asText();
+        String uuid = req.get("uuid").asText();
 
         try {
             User user = User.findByName(username); // ( match where username and password both match )
-            if(user!=null && username.equals(user.username) && password.equals(user.password)){
+            if(user!=null && username.equals(user.username) && password.equals(user.password) && uuid.equals(user.uuid)){
                 return ok("true");
             }else{
                 return ok("false");

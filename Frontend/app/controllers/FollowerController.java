@@ -39,6 +39,9 @@ public class FollowerController extends Controller {
         User u = new User();
         u.setUniqueID(session("uuid"));
 
+        System.out.println("In GetFollowers");
+        System.out.println(session("uuid"));
+
         return u.gatherFollowers()
                 .thenApplyAsync((WSResponse r) -> {
                     if (r.getStatus() == 200 && r.asJson() != null && r.asJson().asBoolean()) {

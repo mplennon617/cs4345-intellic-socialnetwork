@@ -24,4 +24,4 @@ If you wish to set your own **port number**, **username** and **password**, you 
 
 A user is able to login to their account using their **username**, **uuid**, and **password**. After logging in. The user is able to view their followers or other users that they are able to follow.
 
-When a user is viewing their followers, they are able to see the user's brief metadata. In addtion, the user is able to remove a user from their follower list.
+When a user is viewing their followers, they are able to see the user's brief metadata. In addition, the user is able to remove a user from their follower list.

@@ -13,10 +13,10 @@ create table user (
 );
 
 create table follower (
-    follower_id bigint,
-    user_id bigint,
-    foreign key (follower_id) references user(uuid),
-    foreign key (user_id) references user(uuid)
+    followerID bigint,
+    userID bigint,
+    foreign key (followerID) references user(uuid),
+    foreign key (userID) references user(uuid)
 );
 
 

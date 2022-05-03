@@ -5,6 +5,8 @@ bin/
 /lib/
 /modules
 
+sample-README.md
+
 /Frontend/logs/
 /ebean-backend/logs/
 /Frontend/project/project

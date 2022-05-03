@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9bb6d3a2-2690-444f-96ef-ed03735f3acf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ebean-backend/conf/evolutions/default/1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/conf/evolutions/default/1.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ebean-backend/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/logs/application.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.sbt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ebean-backend/build.sbt" />
     <property name="settings.editor.selected.configurable" value="coverage" />
   </component>
   <component name="RunManager">
@@ -97,6 +100,7 @@
       <workItem from="1651196611413" duration="274000" />
       <workItem from="1651198550948" duration="4612000" />
       <workItem from="1651203856205" duration="310000" />
+      <workItem from="1651511068844" duration="2749000" />
     </task>
     <servers />
   </component>

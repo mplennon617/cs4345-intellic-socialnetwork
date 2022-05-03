@@ -19,11 +19,6 @@ create table follower (
     foreign key (userID) references user(uuid)
 );
 
-INSERT INTO follower (follower_id, user_id)
-VALUES (48020951, 00000001);
-
-INSERT INTO follower (follower_id, user_id)
-VALUES (00000001, 48020951);
 
 # --- !Downs
 

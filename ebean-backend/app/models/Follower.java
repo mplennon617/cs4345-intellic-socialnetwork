@@ -21,4 +21,9 @@ public class Follower extends Model {
     public static List<Follower> getFollowers(long id){
         return Follower.find.select("followerID").where().eq("userID", id).findList();
     }
+
+    public static void removeFollower(long user, long follower){
+        Follower.find.where().eq("userID", user).where().eq("followerID", follower).delete();
+        return;
+    }
 }
